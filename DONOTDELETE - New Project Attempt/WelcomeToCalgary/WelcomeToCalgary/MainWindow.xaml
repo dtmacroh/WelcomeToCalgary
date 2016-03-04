@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="480" Width="320">
     <Grid>
-        
+        <Image x:Name="calgaryLogo" HorizontalAlignment="Left" Height="142" Margin="10,10,0,0" VerticalAlignment="Top" Width="292" Source="chnw_186_large4presentations.jpg"/>
+
     </Grid>
 </Window>
