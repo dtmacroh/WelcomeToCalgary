@@ -24,5 +24,20 @@ namespace WelcomeToCalgary
         {
             InitializeComponent();
         }
+
+        private void buttPoI_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttCalInfo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttEvents_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

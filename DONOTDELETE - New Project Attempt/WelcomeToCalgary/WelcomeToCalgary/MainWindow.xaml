@@ -8,6 +8,9 @@
         Title="MainWindow" Height="480" Width="320">
     <Grid>
         <Image x:Name="calgaryLogo" HorizontalAlignment="Left" Height="142" Margin="10,10,0,0" VerticalAlignment="Top" Width="292" Source="chnw_186_large4presentations.jpg"/>
+        <Button x:Name="buttPoI" Content="Places of&#xD;&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="37,229,0,0" VerticalAlignment="Top" Width="100" Click="buttPoI_Click"/>
+        <Button x:Name="buttCalInfo" Content="Info about&#xD;&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="184,229,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click"/>
+        <Button x:Name="buttEvents" Content="Socializing&#xD;&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="109,318,0,0" VerticalAlignment="Top" Width="100" Click="buttEvents_Click"/>
 
     </Grid>
 </Window>
