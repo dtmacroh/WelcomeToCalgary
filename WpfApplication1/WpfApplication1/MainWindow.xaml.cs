@@ -24,5 +24,19 @@ namespace WpfApplication1
         {
             InitializeComponent();
         }
+        private void buttonPointOfInterest_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonAboutCalgary_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonEvents_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
