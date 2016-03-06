@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="buttCalInfo" Height="300" Width="300">
     <Grid>
-        <Button Name="buttHistory " Content="History" HorizontalAlignment="Left" Margin="36,140,0,0" VerticalAlignment="Top" Width="75" Click="buttHistory_Click"/>
+        <Button Name="buttHistory" Content="History" HorizontalAlignment="Left" Margin="36,140,0,0" VerticalAlignment="Top" Width="75" Click="buttHistory_Click"/>
         <Button Name="buttSports" Content="Sports" HorizontalAlignment="Left" Margin="36,191,0,0" VerticalAlignment="Top" Width="75" Click="buttSports_Click"/>
         <Button Name="buttCulture" Content="Culture" HorizontalAlignment="Left" Margin="163,140,0,0" VerticalAlignment="Top" Width="75" Click="buttCulture_Click"/>
         <Button Name="buttTop10" Content="Top 10 Facts" HorizontalAlignment="Left" Margin="163,191,0,0" VerticalAlignment="Top" Width="75" Click="buttTop10_Click" />
