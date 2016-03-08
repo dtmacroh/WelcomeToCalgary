@@ -10,20 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WelcomeToCalgary
 {
     /// <summary>
-    /// Interaction logic for buttPoIWindow.xaml
+    /// Interaction logic for PlacesOfInterest.xaml
     /// </summary>
-    public partial class buttPoIWindow : Window
+    public partial class PlacesOfInterest : UserControl
     {
-        public buttPoIWindow()
+        public PlacesOfInterest()
         {
             InitializeComponent();
         }
-
         private void buttPoITrending_Click(object sender, RoutedEventArgs e)
         {
 

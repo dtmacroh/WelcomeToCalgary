@@ -27,7 +27,9 @@ namespace WelcomeToCalgary
 
         private void buttPoI_Click(object sender, RoutedEventArgs e)
         {
-
+            PlacesOfInterest interest = new PlacesOfInterest();
+            MainScroll.Children.Clear();
+            MainScroll.Children.Add(interest);
         }
 
         private void buttCalInfo_Click(object sender, RoutedEventArgs e)

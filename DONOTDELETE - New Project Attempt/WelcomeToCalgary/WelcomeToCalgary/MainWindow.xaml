@@ -12,18 +12,19 @@
             <Button x:Name="buttCalInfo" Content="Info about&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="115,20,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click" FontSize="16"/>
             <Button x:Name="buttEvents" Content="Socializing&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="220,20,0,0" VerticalAlignment="Top" Width="100" Click="buttEvents_Click" FontSize="16"/>
             <Button x:Name="buttLinks" Content="Useful&#xA;Links" HorizontalAlignment="Left" Height="50" Margin="325,20,0,0" VerticalAlignment="Top" Width="100" Click="buttLinks_Click" FontSize="16"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="10,79,0,0" Stroke="Black" VerticalAlignment="Top" Width="572"/>
         </Grid>
 
-        <ScrollViewer x:Name="MainScroll" Height="680">
-            <Grid Height="1235">
+        <ScrollViewer Height="680">
+            <StackPanel x:Name="MainScroll">
+            <Grid Height="680">
                 <Image x:Name="calgaryLogo" HorizontalAlignment="Left" Height="142" Margin="158,104,0,0" VerticalAlignment="Top" Width="292" Source="chnw_186_large4presentations.jpg"/>
                 <Button x:Name="buttPoICopy" Content="Places of&#xD;&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="136,339,0,0" VerticalAlignment="Top" Width="100" Click="buttPoI_Click" FontSize="16"/>
                 <Button x:Name="buttCalInfoCopy" Content="Info about&#xD;&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="350,339,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click" FontSize="16"/>
                 <Button x:Name="buttEventsCopy" Content="Socializing&#xD;&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="136,500,0,0" VerticalAlignment="Top" Width="100" Click="buttEvents_Click" FontSize="16"/>
                 <Button x:Name="buttLinksCopy" Content="Useful&#xD;&#xA;Links" HorizontalAlignment="Left" Height="50" Margin="350,500,0,0" VerticalAlignment="Top" Width="100" Click="buttLinks_Click" FontSize="16"/>
-                <Label Content="Label" HorizontalAlignment="Left" Height="55" Margin="243,709,0,471" Width="99"/>
             </Grid>
+            </StackPanel>
         </ScrollViewer>
-        
     </StackPanel>
 </Window>

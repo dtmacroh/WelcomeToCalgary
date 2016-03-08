@@ -61,10 +61,6 @@
       <Generator>MSBuild:Compile</Generator>
       <Link>buttCaInfoWindow.xaml</Link>
     </Page>
-    <Page Include="buttPoIWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -77,15 +73,19 @@
       <DependentUpon>buttCaInfoWindow.xaml</DependentUpon>
       <Link>buttCaInfoWindow.xaml.cs</Link>
     </Compile>
-    <Compile Include="buttPoIWindow.xaml.cs">
-      <DependentUpon>buttPoIWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PlacesOfInterest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PlacesOfInterest.xaml.cs">
+      <DependentUpon>PlacesOfInterest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
