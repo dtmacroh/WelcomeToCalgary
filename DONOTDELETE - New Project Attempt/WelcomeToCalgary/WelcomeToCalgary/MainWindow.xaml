@@ -5,12 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WelcomeToCalgary"
         mc:Ignorable="d"
-        Title="MainWindow" Height="480" Width="320">
-    <Grid>
-        <Image x:Name="calgaryLogo" HorizontalAlignment="Left" Height="142" Margin="10,10,0,0" VerticalAlignment="Top" Width="292" Source="chnw_186_large4presentations.jpg"/>
-        <Button x:Name="buttPoI" Content="Places of&#xD;&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="37,229,0,0" VerticalAlignment="Top" Width="100" Click="buttPoI_Click"/>
-        <Button x:Name="buttCalInfo" Content="Info about&#xD;&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="184,229,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click"/>
-        <Button x:Name="buttEvents" Content="Socializing&#xD;&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="109,318,0,0" VerticalAlignment="Top" Width="100" Click="buttEvents_Click"/>
+        Title="MainWindow" Height="800" Width="600">
+    <StackPanel>
+        <Grid Height="80"/>
 
-    </Grid>
+        <ScrollViewer x:Name="MainScroll" Height="680">
+            <Grid Height="1235">
+                <Image x:Name="calgaryLogo" HorizontalAlignment="Left" Height="142" Margin="158,104,0,0" VerticalAlignment="Top" Width="292" Source="chnw_186_large4presentations.jpg"/>
+                <Button x:Name="buttPoI" Content="Places of&#xD;&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="136,339,0,0" VerticalAlignment="Top" Width="100" Click="buttPoI_Click" FontSize="16"/>
+                <Button x:Name="buttCalInfo" Content="Info about&#xD;&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="350,339,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click" FontSize="16"/>
+                <Button x:Name="buttEvents" Content="Socializing&#xD;&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="136,500,0,0" VerticalAlignment="Top" Width="100" Click="buttEvents_Click" FontSize="16"/>
+                <Button x:Name="buttLinks" Content="Useful&#xD;&#xA;Links" HorizontalAlignment="Left" Height="50" Margin="350,500,0,0" VerticalAlignment="Top" Width="100" Click="buttLinks_Click" FontSize="16"/>
+                <Label Content="Label" HorizontalAlignment="Left" Height="55" Margin="243,709,0,471" Width="99"/>
+            </Grid>
+        </ScrollViewer>
+        
+    </StackPanel>
 </Window>

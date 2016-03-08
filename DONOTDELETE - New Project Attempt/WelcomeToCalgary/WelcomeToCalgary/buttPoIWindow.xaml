@@ -4,13 +4,13 @@
         Title="buttPoIWindow" Height="480" Width="320">
     <Grid>
         <Label x:Name="PoITitle" Content="Places of Interest" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="67,63,82,0"  BorderThickness="2" Background="Gray"  BorderBrush="Black" Height="41" Width="163" FontSize="20"/>
-        <Button Name="buttPoISports" Content="Sports" HorizontalAlignment="Left" Height="37" Margin="42,280,0,0" VerticalAlignment="Top" Width="59" Click="Button_Click"/>
-        <Button Name="buttPoITrending" Content="Trending" HorizontalAlignment="Left" Height="37" Margin="125,165,0,0" VerticalAlignment="Top" Width="59"/>
-        <Button Name="buttPoIReligion" Content="Religious&#xD;&#xA;Sites" HorizontalAlignment="Left" Height="37" Margin="205,280,0,0" VerticalAlignment="Top" Width="59"/>
-        <Button Name="buttPoIRestaurants" Content="Restaurants" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="59" Margin="42,222,0,0"/>
-        <Button Name="buttPoIRecreational" Content="Recreational" HorizontalAlignment="Left" Height="37" Margin="125,222,0,0" VerticalAlignment="Top" Width="59"/>
-        <Button Name="buttPoINature" Content="Nature and&#xD;&#xA;Outdoors" HorizontalAlignment="Left" Height="37" Margin="205,222,0,0" VerticalAlignment="Top" Width="59"/>
-        <Button Name="buttPoIArts" Content="Arts and&#xD;&#xA;Culture" HorizontalAlignment="Left" Height="37" Margin="125,280,0,0" VerticalAlignment="Top" Width="59"/>
+        <Button Name="buttPoISports" Content="Sports" HorizontalAlignment="Left" Height="37" Margin="42,280,0,0" VerticalAlignment="Top" Width="59" Click="buttPoISports_Click"/>
+        <Button Name="buttPoITrending" Content="Trending" HorizontalAlignment="Left" Height="37" Margin="125,165,0,0" VerticalAlignment="Top" Width="59" Click="buttPoITrending_Click"/>
+        <Button Name="buttPoIReligion" Content="Religious&#xD;&#xA;Sites" HorizontalAlignment="Left" Height="37" Margin="205,280,0,0" VerticalAlignment="Top" Width="59" Click="buttPoIReligion_Click"/>
+        <Button Name="buttPoIRestaurants" Content="Restaurants" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="59" Margin="42,222,0,0" Click="buttPoIRestaurants_Click"/>
+        <Button Name="buttPoIRecreational" Content="Recreational" HorizontalAlignment="Left" Height="37" Margin="125,222,0,0" VerticalAlignment="Top" Width="59" Click="buttPoIRecreational_Click"/>
+        <Button Name="buttPoINature" Content="Nature and&#xD;&#xA;Outdoors" HorizontalAlignment="Left" Height="37" Margin="205,222,0,0" VerticalAlignment="Top" Width="59" Click="buttPoINature_Click"/>
+        <Button Name="buttPoIArts" Content="Arts and&#xD;&#xA;Culture" HorizontalAlignment="Left" Height="37" Margin="125,280,0,0" VerticalAlignment="Top" Width="59" Click="buttPoIArts_Click"/>
 
     </Grid>
 </Window>

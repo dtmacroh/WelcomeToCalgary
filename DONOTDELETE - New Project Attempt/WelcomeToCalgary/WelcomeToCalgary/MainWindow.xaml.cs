@@ -39,5 +39,10 @@ namespace WelcomeToCalgary
         {
 
         }
+
+        private void buttLinks_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

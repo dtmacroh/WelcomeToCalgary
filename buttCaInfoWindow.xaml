@@ -8,7 +8,6 @@
         <Button Name="buttCulture" Content="Culture" HorizontalAlignment="Left" Margin="163,140,0,0" VerticalAlignment="Top" Width="75" Click="buttCulture_Click"/>
         <Button Name="buttTop10" Content="Top 10 Facts" HorizontalAlignment="Left" Margin="163,191,0,0" VerticalAlignment="Top" Width="75" Click="buttTop10_Click" />
         <Label Content="Calgary Information&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="85,63,0,0"  BorderThickness="2" Background="Gray"  BorderBrush="Black" Height="41"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="424,191,-232,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
