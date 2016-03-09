@@ -6,6 +6,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="600">
     <Grid>
-            
+        <Label Content="Trending" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="18"/>
     </Grid>
 </UserControl>
