@@ -176,6 +176,9 @@
   <ItemGroup>
     <Resource Include="chnw_186_large4presentations.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="12062659_10209205325558339_513850230_o.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
