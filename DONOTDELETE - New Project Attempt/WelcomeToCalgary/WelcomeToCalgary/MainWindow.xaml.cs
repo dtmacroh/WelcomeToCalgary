@@ -34,12 +34,16 @@ namespace WelcomeToCalgary
 
         private void buttCalInfo_Click(object sender, RoutedEventArgs e)
         {
-            
+            CalgaryInfo calgaryInfo = new CalgaryInfo();
+            MainScroll.Children.Clear();
+            MainScroll.Children.Add(calgaryInfo);
         }
 
         private void buttEvents_Click(object sender, RoutedEventArgs e)
         {
-
+            EventsMain events = new EventsMain(MainScroll);
+            MainScroll.Children.Clear();
+            MainScroll.Children.Add(events);
         }
 
         private void buttLinks_Click(object sender, RoutedEventArgs e)

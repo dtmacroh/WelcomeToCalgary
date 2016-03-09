@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WelcomeToCalgary
 {
     /// <summary>
-    /// Interaction logic for buttCalInfo.xaml
+    /// Interaction logic for CalgaryInfo.xaml
     /// </summary>
-    public partial class buttCalInfo : Window
+    public partial class CalgaryInfo : UserControl
     {
-        public buttCalInfo()
+        public CalgaryInfo()
         {
             InitializeComponent();
         }

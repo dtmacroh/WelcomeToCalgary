@@ -56,10 +56,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="..\..\..\buttCaInfoWindow.xaml">
+    <Page Include="EventAreaSelect.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-      <Link>buttCaInfoWindow.xaml</Link>
+    </Page>
+    <Page Include="CalgaryInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventsMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -69,9 +76,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="..\..\..\buttCaInfoWindow.xaml.cs">
-      <DependentUpon>buttCaInfoWindow.xaml</DependentUpon>
-      <Link>buttCaInfoWindow.xaml.cs</Link>
+    <Compile Include="EventAreaSelect.xaml.cs">
+      <DependentUpon>EventAreaSelect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CalgaryInfo.xaml.cs">
+      <DependentUpon>CalgaryInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventsMain.xaml.cs">
+      <DependentUpon>EventsMain.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
