@@ -17,7 +17,7 @@
 
         <ScrollViewer Height="680">
             <StackPanel x:Name="MainScroll">
-            <Grid Height="680">
+            <Grid x:Name="HomepageGrid" Height="680">
                 <Image x:Name="calgaryLogo" HorizontalAlignment="Left" Height="142" Margin="158,104,0,0" VerticalAlignment="Top" Width="292" Source="chnw_186_large4presentations.jpg"/>
                 <Button x:Name="buttPoICopy" Content="Places of&#xD;&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="136,339,0,0" VerticalAlignment="Top" Width="100" Click="buttPoI_Click" FontSize="16"/>
                 <Button x:Name="buttCalInfoCopy" Content="Info about&#xD;&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="350,339,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click" FontSize="16"/>

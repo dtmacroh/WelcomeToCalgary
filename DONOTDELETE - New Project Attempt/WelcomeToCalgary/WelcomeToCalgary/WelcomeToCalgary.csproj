@@ -81,10 +81,59 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PoIArts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PoINature.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PoIRecreation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PoIReligion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PoIRestaurant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PoISports.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PoITrending.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PlacesOfInterest.xaml.cs">
       <DependentUpon>PlacesOfInterest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PoIArts.xaml.cs">
+      <DependentUpon>PoIArts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PoINature.xaml.cs">
+      <DependentUpon>PoINature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PoIRecreation.xaml.cs">
+      <DependentUpon>PoIRecreation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PoIReligion.xaml.cs">
+      <DependentUpon>PoIReligion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PoIRestaurant.xaml.cs">
+      <DependentUpon>PoIRestaurant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PoISports.xaml.cs">
+      <DependentUpon>PoISports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PoITrending.xaml.cs">
+      <DependentUpon>PoITrending.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
