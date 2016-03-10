@@ -13,30 +13,28 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WelcomeToCalgary
+namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for EventsMain.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class EventsMain : UserControl
+    public partial class MainWindow : Window
     {
-
-        StackPanel mainScroll;
-        public EventsMain(StackPanel scroll)
+        public MainWindow()
         {
             InitializeComponent();
-            mainScroll = scroll;
-
         }
-
-        private void ButtArea_Click(object sender, RoutedEventArgs e)
+        private void buttonPointOfInterest_Click(object sender, RoutedEventArgs e)
         {
-            EventAreaSelect area = new EventAreaSelect();
-            mainScroll.Children.Clear();
-            mainScroll.Children.Add(area);
+
         }
 
-        private void ButtSearch_Click(object sender, RoutedEventArgs e)
+        private void buttonAboutCalgary_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonEvents_Click(object sender, RoutedEventArgs e)
         {
 
         }
