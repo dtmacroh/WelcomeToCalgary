@@ -48,9 +48,7 @@ namespace WelcomeToCalgary
 
         private void buttLinks_Click(object sender, RoutedEventArgs e)
         {
-            UsefulLinks events = new UsefulLinks(MainScroll);
-            MainScroll.Children.Clear();
-            MainScroll.Children.Add(events);
+
         }
     }
 }
