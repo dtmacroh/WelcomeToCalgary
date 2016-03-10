@@ -56,12 +56,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-<<<<<<< HEAD
-=======
     <Compile Include="UsefulLinks.xaml.cs">
       <DependentUpon>UsefulLinks.xaml</DependentUpon>
     </Compile>
->>>>>>> 15fd321adc8d3edd717c7ee597dfbd364839ceab
+
     <Page Include="CICulture.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
