@@ -64,7 +64,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EventCultureSelect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventForest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventFrance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventJapan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EventsMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventSpain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventUni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventWSprings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -82,8 +110,29 @@
     <Compile Include="CalgaryInfo.xaml.cs">
       <DependentUpon>CalgaryInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EventCultureSelect.xaml.cs">
+      <DependentUpon>EventCultureSelect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventForest.xaml.cs">
+      <DependentUpon>EventForest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventFrance.xaml.cs">
+      <DependentUpon>EventFrance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventJapan.xaml.cs">
+      <DependentUpon>EventJapan.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EventsMain.xaml.cs">
       <DependentUpon>EventsMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventSpain.xaml.cs">
+      <DependentUpon>EventSpain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventUni.xaml.cs">
+      <DependentUpon>EventUni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventWSprings.xaml.cs">
+      <DependentUpon>EventWSprings.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
