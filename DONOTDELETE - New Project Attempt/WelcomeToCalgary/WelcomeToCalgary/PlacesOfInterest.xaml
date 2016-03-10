@@ -6,14 +6,15 @@
              mc:Ignorable="d" 
              d:DesignHeight="680" d:DesignWidth="600">
     <Grid Height="680">
-        <Label x:Name="PoITitle" Content="Places of Interest" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,63,0,0"  BorderThickness="2" Background="Gray"  BorderBrush="Black" Height="41" Width="163" FontSize="20"/>
-        <Button Name="buttPoISports" Content="Sports" HorizontalAlignment="Center" Height="37" Margin="0,361,300,0" VerticalAlignment="Top" Width="60" Click="buttPoISports_Click"/>
-        <Button Name="buttPoITrending" Content="Trending" HorizontalAlignment="Center" Height="37" Margin="0,161,0,0" VerticalAlignment="Top" Width="60" Click="buttPoITrending_Click"/>
-        <Button Name="buttPoIReligion" Content="Religious&#xD;&#xA;Sites" HorizontalAlignment="Center" Height="37" Margin="300,361,0,0" VerticalAlignment="Top" Width="60" Click="buttPoIReligion_Click"/>
-        <Button Name="buttPoIRestaurants" Content="Restaurants" HorizontalAlignment="Center" Height="37" VerticalAlignment="Top" Width="60" Margin="0,257,300,0" Click="buttPoIRestaurants_Click"/>
-        <Button Name="buttPoIRecreational" Content="Recreational" HorizontalAlignment="Center" Height="37" Margin="0,257,0,0" VerticalAlignment="Top" Width="60" Click="buttPoIRecreational_Click"/>
-        <Button Name="buttPoINature" Content="Nature and&#xD;&#xA;Outdoors" HorizontalAlignment="Center" Height="37" Margin="300,257,0,0" VerticalAlignment="Top" Width="60" Click="buttPoINature_Click"/>
-        <Button Name="buttPoIArts" Content="Arts and&#xD;&#xA;Culture" HorizontalAlignment="Center" Height="37" Margin="0,361,0,0" VerticalAlignment="Top" Width="60" Click="buttPoIArts_Click"/>
+        <Rectangle Fill="#FF424299" HorizontalAlignment="Left" Height="100" Margin="119,93,0,0" Stroke="Black" VerticalAlignment="Top" Width="369"/>
+        <TextBlock HorizontalAlignment="Left" Margin="198,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="30" FontFamily="Segoe WP Black" Text="Places of Interest" Foreground="White" Height="86" Width="211"/>
+        <Button Name="buttPoISports" Content="Sports" HorizontalAlignment="Center" Height="60" Margin="0,411,300,0" VerticalAlignment="Top" Width="100" Click="buttPoISports_Click" FontSize="20"/>
+        <Button Name="buttPoITrending" Content="Trending" HorizontalAlignment="Center" Height="60" Margin="0,211,0,0" VerticalAlignment="Top" Width="100" Click="buttPoITrending_Click" FontSize="20"/>
+        <Button Name="buttPoIReligion" Content="Religious&#xD;&#xA;Sites" HorizontalAlignment="Center" Height="60" Margin="300,411,0,0" VerticalAlignment="Top" Width="100" Click="buttPoIReligion_Click" FontSize="20"/>
+        <Button Name="buttPoIRestaurants" Content="Restaurants" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="100" Margin="0,307,300,0" Click="buttPoIRestaurants_Click" FontSize="18"/>
+        <Button Name="buttPoIRecreational" Content="Recreational&#xD;&#xA;Activities" HorizontalAlignment="Center" Height="60" Margin="0,307,0,0" VerticalAlignment="Top" Width="100" Click="buttPoIRecreational_Click" FontSize="17"/>
+        <Button Name="buttPoINature" Content="Nature and&#xD;&#xA;Outdoors" HorizontalAlignment="Center" Height="60" Margin="300,307,0,0" VerticalAlignment="Top" Width="100" Click="buttPoINature_Click" FontSize="19"/>
+        <Button Name="buttPoIArts" Content="Arts and&#xD;&#xA;Culture" HorizontalAlignment="Center" Height="60" Margin="0,411,0,0" VerticalAlignment="Top" Width="100" Click="buttPoIArts_Click" FontSize="20"/>
 
     </Grid>
 </UserControl>
