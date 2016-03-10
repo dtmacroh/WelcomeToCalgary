@@ -16,16 +16,16 @@ using System.Windows.Shapes;
 namespace WelcomeToCalgary
 {
     /// <summary>
-    /// Interaction logic for AreaSelect.xaml
+    /// Interaction logic for EventCultureSelect.xaml
     /// </summary>
-    public partial class EventAreaSelect : UserControl
+    public partial class EventCultureSelect : UserControl
     {
         StackPanel mainStack;
-        public EventAreaSelect(StackPanel stack)
+        public EventCultureSelect(StackPanel stack)
         {
-
-            InitializeComponent(); mainStack = stack;
-            scrollb.Visibility = Visibility.Hidden;
+            InitializeComponent();
+            mainStack = stack;
+            scroll.Visibility = Visibility.Hidden;
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -33,21 +33,21 @@ namespace WelcomeToCalgary
 
         }
 
-        private void wsprings_Selected(object sender, RoutedEventArgs e)
+        private void spain_Selected(object sender, RoutedEventArgs e)
         {
-            scrollb.Visibility = Visibility.Visible;
+            scroll.Visibility = Visibility.Visible;
 
         }
 
-        private void forest_Selected(object sender, RoutedEventArgs e)
+        private void france_Selected(object sender, RoutedEventArgs e)
         {
-            scrollb.Visibility = Visibility.Visible;
+            scroll.Visibility = Visibility.Visible;
 
         }
 
-        private void uni_Selected(object sender, RoutedEventArgs e)
+        private void japan_Selected(object sender, RoutedEventArgs e)
         {
-            scrollb.Visibility = Visibility.Visible;
+            scroll.Visibility = Visibility.Visible;
 
         }
     }

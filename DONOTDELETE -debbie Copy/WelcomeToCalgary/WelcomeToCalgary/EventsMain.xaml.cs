@@ -31,16 +31,14 @@ namespace WelcomeToCalgary
 
         private void ButtArea_Click(object sender, RoutedEventArgs e)
         {
-            EventAreaSelect area = new EventAreaSelect(mainScroll);
+            EventAreaSelect area = new EventAreaSelect();
             mainScroll.Children.Clear();
             mainScroll.Children.Add(area);
         }
 
         private void ButtSearch_Click(object sender, RoutedEventArgs e)
         {
-            EventCultureSelect culture = new EventCultureSelect(mainScroll);
-            mainScroll.Children.Clear();
-            mainScroll.Children.Add(culture);
+
         }
     }
 }
