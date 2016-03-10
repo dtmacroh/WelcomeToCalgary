@@ -16,6 +16,11 @@
             </Grid>
 
             <Grid>
+                <TextBlock HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" VerticalAlignment="Top" Width="317"><Run FontWeight="Bold" Text="Calgary Saddledome"/><Run/><LineBreak/><Run Language="en-ca" Text="Calgary's premiere venue for supporting sports, the Saddledome hosts hockey, lacrosse, and premier soccer teams."/></TextBlock>
+                <Image HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="70" Margin="365,0,0,0"/>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="0,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="435"/>
+            </Grid>
+            <Grid>
                 <TextBlock HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" Text="---More entries to be added soon!---" VerticalAlignment="Top" Width="317"/>
                 <Image HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="70" Margin="365,0,0,0"/>
                 <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="0,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="435"/>
