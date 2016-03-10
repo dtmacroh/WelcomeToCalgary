@@ -34,7 +34,7 @@ namespace WelcomeToCalgary
 
         private void buttCalInfo_Click(object sender, RoutedEventArgs e)
         {
-            CalgaryInfo calgaryInfo = new CalgaryInfo();
+            CalgaryInfo calgaryInfo = new CalgaryInfo(MainScroll);
             MainScroll.Children.Clear();
             MainScroll.Children.Add(calgaryInfo);
         }

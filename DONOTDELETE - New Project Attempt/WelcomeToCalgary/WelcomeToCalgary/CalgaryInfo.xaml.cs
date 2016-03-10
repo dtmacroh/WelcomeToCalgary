@@ -20,9 +20,35 @@ namespace WelcomeToCalgary
     /// </summary>
     public partial class CalgaryInfo : UserControl
     {
-        public CalgaryInfo()
+        StackPanel mainScroll;
+        public CalgaryInfo(StackPanel scroll)
         {
             InitializeComponent();
+            mainScroll = scroll;
+        }
+        public void ButtHistory_Click(object sender, RoutedEventArgs e)
+        {
+            CIHistory area = new CIHistory(mainScroll);
+            mainScroll.Children.Clear();
+            mainScroll.Children.Add(area);
+        }
+        public void ButtCulture_Click(object sender, RoutedEventArgs e)
+        {
+            CICulture area = new CICulture(mainScroll);
+            mainScroll.Children.Clear();
+            mainScroll.Children.Add(area);
+        }
+        public void ButtSports_Click(object sender, RoutedEventArgs e)
+        {
+            CISports area = new CISports(mainScroll);
+            mainScroll.Children.Clear();
+            mainScroll.Children.Add(area);
+        }
+        public void ButtTop10_Click(object sender, RoutedEventArgs e)
+        {
+            CITop10 area = new CITop10(mainScroll);
+            mainScroll.Children.Clear();
+            mainScroll.Children.Add(area);
         }
     }
 }

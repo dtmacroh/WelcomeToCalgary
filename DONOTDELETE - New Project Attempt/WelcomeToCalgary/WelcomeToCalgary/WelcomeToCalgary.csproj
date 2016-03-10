@@ -56,6 +56,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CICulture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CIHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CISports.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CITop10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EventAreaSelect.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -75,6 +91,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CICulture.xaml.cs">
+      <DependentUpon>CICulture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CIHistory.xaml.cs">
+      <DependentUpon>CIHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CISports.xaml.cs">
+      <DependentUpon>CISports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CITop10.xaml.cs">
+      <DependentUpon>CITop10.xaml</DependentUpon>
     </Compile>
     <Compile Include="EventAreaSelect.xaml.cs">
       <DependentUpon>EventAreaSelect.xaml</DependentUpon>
