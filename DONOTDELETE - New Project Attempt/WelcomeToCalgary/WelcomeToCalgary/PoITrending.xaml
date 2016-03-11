@@ -10,7 +10,7 @@
         <StackPanel Margin="84,84,81,146" Orientation="Vertical" Height="auto">
             <Grid>
                 <TextBlock HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" VerticalAlignment="Top" Width="317"><Run FontWeight="Bold" Text="Jack Singer Concert Hall"/><Run/><LineBreak/><Run Language="en-ca" Text="Calgary's leading concert hall and stage venue. Productions, recitals, and other performances are available "/><Run Text="here." TextDecorations="Underline" FontWeight="SemiBold" Foreground="Navy"/><LineBreak/><Run Text="LINK TO BE ADDED IN LATER PROTOTYPE"/></TextBlock>
-                <Image HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="70" Margin="365,0,0,0"/>
+                <Image HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="70" Margin="325,0,0,0" Source="JackSingerCropped.jpg"/>
                 <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="0,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="435"/>
 
             </Grid>
