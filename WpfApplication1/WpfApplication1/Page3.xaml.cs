@@ -13,24 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WelcomeToCalgary
+namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for UsefulLinks.xaml
+    /// Interaction logic for Page3.xaml
     /// </summary>
-    public partial class UsefulLinks : UserControl
+    public partial class Page3 : UserControl
     {
-        private StackPanel MainScroll;
-
-        public UsefulLinks()
+        public Page3()
         {
-            InitializeComponent();
-        }
-
-        public UsefulLinks(StackPanel scroll)
-        {
-            // TODO: Complete member initialization
-            MainScroll = scroll;
             InitializeComponent();
         }
     }

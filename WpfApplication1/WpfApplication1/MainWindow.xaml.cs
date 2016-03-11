@@ -13,25 +13,30 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WelcomeToCalgary
+namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for UsefulLinks.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class UsefulLinks : UserControl
+    public partial class MainWindow : Window
     {
-        private StackPanel MainScroll;
-
-        public UsefulLinks()
+        public MainWindow()
         {
             InitializeComponent();
         }
-
-        public UsefulLinks(StackPanel scroll)
+        private void buttonPointOfInterest_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Complete member initialization
-            MainScroll = scroll;
-            InitializeComponent();
+
+        }
+
+        private void buttonAboutCalgary_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonEvents_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
