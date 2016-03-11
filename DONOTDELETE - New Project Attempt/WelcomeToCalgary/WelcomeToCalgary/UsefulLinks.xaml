@@ -8,11 +8,22 @@
     <Grid Height="500" VerticalAlignment="Top">
         <Rectangle Fill="#FF424299" HorizontalAlignment="Left" Height="100" Margin="119,93,0,0" Stroke="Black" VerticalAlignment="Top" Width="369"/>
         <TextBlock HorizontalAlignment="Left" Margin="198,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="36" FontFamily="Segoe WP Black" Text="Useful Links" Foreground="White" Height="86" Width="211"/>
-        
-        
-        
-        
-        
-        
+
+        <StackPanel Margin="52,220,52,10" Orientation="Vertical" Height="auto">
+            <Grid Height="auto">
+                <TextBlock HorizontalAlignment="Left" Height="auto" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" FontSize="16"><Run FontWeight="Bold" Text="Calgary Transit Page"/><Run/><LineBreak/><Run Text="http://www.calgarytransit.com" TextDecorations="Underline" FontWeight="SemiBold" Foreground="Navy"/><Run Text="  LINK TO BE ADDED IN LATER PROTOTYPE"/><LineBreak/><Run Language="en-ca" Text="A one-stop application for finding a transit route, learning your bus/train schedule, and when the next bus will arrive."/></TextBlock>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="0,123,0,0" Stroke="Black" VerticalAlignment="Top" Width="435"/>
+
+            </Grid>
+
+            <Grid Height="auto">
+                <TextBlock HorizontalAlignment="Left" Height="auto" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" FontSize="16"><Run FontWeight="Bold" Text="===More links to be added soon==="/></TextBlock>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="0,123,0,0" Stroke="Black" VerticalAlignment="Top" Width="435"/>
+           </Grid>
+        </StackPanel>
+
+
+
+
     </Grid>
 </UserControl>
