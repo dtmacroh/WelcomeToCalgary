@@ -36,6 +36,24 @@ namespace WelcomeToCalgary
         private void wsprings_Selected(object sender, RoutedEventArgs e)
         {
             scrollb.Visibility = Visibility.Visible;
+            for (int i = 0; i < 2; i++)
+            {
+                EventCreator Event = new EventCreator();
+                if (i == 0)
+                {
+                    Event.Title = "Easter Hunt";
+                    Event.Details = "Welcome to the annual egg hunt, open for all ages. There will be a variety of treats hidden in" +
+                    "the smallest corners of the field. " + "\n" + "Date & Time: April 5, 2016" + "\n" + "Location: Millow Park";
+                }
+                else
+                {
+                    Event.Title = "Petting Zoo";
+                    Event.Details = "Come visit the latest petting zoo with your children to let them play with the tame animals" +
+                                        "Date & Time: March 30, 2016"+ "\n" + "Location: Marshmellow Centre";
+                }
+
+                this.stacklist.Children.Add(Event);
+            }
 
         }
 

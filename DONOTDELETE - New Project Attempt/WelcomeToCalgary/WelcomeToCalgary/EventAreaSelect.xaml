@@ -12,11 +12,11 @@
             <ComboBoxItem Name="wsprings" Content="West Springs" Selected="wsprings_Selected" FontSize="20"/>
             <ComboBoxItem Name="forest" Content="Forest Lawn" Selected="forest_Selected" FontSize="20"/>
             <ComboBoxItem Name="uni" Content="University Heights" Selected="uni_Selected" FontSize="20"/>
-    
-
         </ComboBox>
-        <ScrollViewer Name="scrollb" HorizontalAlignment="Left" Height="198" Margin="119,330,0,0" VerticalAlignment="Top" Width="369" Background="#FF322F2F"/>
 
+        <ScrollViewer Name="scrollb" Height="250" Margin="91,346,48,82">
+            <StackPanel Name="stacklist" Height="auto" Width="auto"></StackPanel>
+        </ScrollViewer>
 
 
     </Grid>

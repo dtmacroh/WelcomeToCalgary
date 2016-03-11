@@ -13,7 +13,9 @@
             <ComboBoxItem Name="france" Content="French" Selected="france_Selected"/>
             <ComboBoxItem Name="japan"  Content="Japanese" Selected="japan_Selected"/>
         </ComboBox>
-        <ScrollViewer Name="scroll" HorizontalAlignment="Left" Height="209" Margin="140,394,0,0" VerticalAlignment="Top" Width="328" Background="#FF322F2F"/>
+        <ScrollViewer Name="scroll" HorizontalAlignment="Left" Height="209" Margin="140,394,0,0" VerticalAlignment="Top" Width="328" Background="#FF322F2F">
+            <StackPanel Height="144" Width="263"/>
+        </ScrollViewer>
 
     </Grid>
 </UserControl>
