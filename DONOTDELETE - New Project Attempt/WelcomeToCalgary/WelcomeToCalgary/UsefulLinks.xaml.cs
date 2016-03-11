@@ -31,6 +31,7 @@ namespace WelcomeToCalgary
         {
             // TODO: Complete member initialization
             MainScroll = scroll;
+            InitializeComponent();
         }
     }
 }
