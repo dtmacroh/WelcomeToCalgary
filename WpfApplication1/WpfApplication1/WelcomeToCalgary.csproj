@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4129CDC8-023E-4513-BF08-52F2247F30B3}</ProjectGuid>
+    <ProjectGuid>{1674F1BE-C4A2-455F-9BAE-49822DB12821}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WelcomeToCalgary</RootNamespace>
-    <AssemblyName>WelcomeToCalgary</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>CalgaryKiosk</RootNamespace>
+    <AssemblyName>CalgaryKiosk</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -56,34 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="CICulture.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CIHistory.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CISports.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CITop10.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EventAreaSelect.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CalgaryInfo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EventsMain.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -92,89 +63,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CICulture.xaml.cs">
-      <DependentUpon>CICulture.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CIHistory.xaml.cs">
-      <DependentUpon>CIHistory.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CISports.xaml.cs">
-      <DependentUpon>CISports.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CITop10.xaml.cs">
-      <DependentUpon>CITop10.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EventAreaSelect.xaml.cs">
-      <DependentUpon>EventAreaSelect.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CalgaryInfo.xaml.cs">
-      <DependentUpon>CalgaryInfo.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EventsMain.xaml.cs">
-      <DependentUpon>EventsMain.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PlacesOfInterest.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PoIArts.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PoINature.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PoIRecreation.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PoIReligion.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PoIRestaurant.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PoISports.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PoITrending.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PlacesOfInterest.xaml.cs">
-      <DependentUpon>PlacesOfInterest.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PoIArts.xaml.cs">
-      <DependentUpon>PoIArts.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PoINature.xaml.cs">
-      <DependentUpon>PoINature.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PoIRecreation.xaml.cs">
-      <DependentUpon>PoIRecreation.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PoIReligion.xaml.cs">
-      <DependentUpon>PoIReligion.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PoIRestaurant.xaml.cs">
-      <DependentUpon>PoIRestaurant.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PoISports.xaml.cs">
-      <DependentUpon>PoISports.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PoITrending.xaml.cs">
-      <DependentUpon>PoITrending.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -200,12 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="chnw_186_large4presentations.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="12062659_10209205325558339_513850230_o.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

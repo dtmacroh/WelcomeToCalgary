@@ -20,23 +20,30 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
+        Email thispage1 = new Email();
+        Page2 thispage2 = new Page2();
+        Page3 thispage3 = new Page3();
         public MainWindow()
         {
             InitializeComponent();
-        }
-        private void buttonPointOfInterest_Click(object sender, RoutedEventArgs e)
-        {
+
+            StackPanel1.Children.Add(thispage1);
 
         }
-
-        private void buttonAboutCalgary_Click(object sender, RoutedEventArgs e)
+        private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            StackPanel1.Children.Clear();
+            StackPanel1.Children.Add(thispage1);
         }
-
-        private void buttonEvents_Click(object sender, RoutedEventArgs e)
+        private void button2_Click(object sender, RoutedEventArgs e)
         {
-
+            StackPanel1.Children.Clear();
+            StackPanel1.Children.Add(thispage2);
+        }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            StackPanel1.Children.Clear();
+            StackPanel1.Children.Add(thispage3);
         }
     }
 }
