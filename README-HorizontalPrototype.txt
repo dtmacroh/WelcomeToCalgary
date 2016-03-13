@@ -34,3 +34,7 @@ Useful Links.
   Calgary. Each button will lead to information relating to its 
   respective name. 
 -Events
+ This page contains the option of searching for events by filtering them by 
+ culture or by area. Once a selection has been made, it will display information
+ of the events by the appropriate filtering. The events will contain a description,
+ a location and time. 
