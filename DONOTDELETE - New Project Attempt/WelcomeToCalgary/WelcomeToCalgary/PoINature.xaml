@@ -6,12 +6,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="600">
     <Grid>
-        <Label Content="Nature" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Nature" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" FontSize="24"/>
         <StackPanel Margin="84,84,81,146" Orientation="Vertical" Height="auto">
             <Grid>
-                <TextBlock HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" VerticalAlignment="Top" Width="317"><Run FontWeight="Bold" Text="Prince's Island Park"/><Run/><LineBreak/><Run Language="en-ca" Text="Located less than five minutes from Downtown Calgary, walk along the river path and enjoy Calgary's greenery"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Height="auto" TextWrapping="Wrap" FontSize="16" VerticalAlignment="Top" Width="317"><Run FontWeight="Bold" Text="Prince's Island Park"/><Run/>
+                    <LineBreak/><Run Language="en-ca" Text="Located less than five minutes from Downtown Calgary, walk along the river path and enjoy Calgary's greenery"/><LineBreak/></TextBlock>
                 <Image HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="70" Margin="325,0,0,0" Source="PIPcropped.jpg"/>
-                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="0,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="435"/>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Bottom" Width="435"/>
 
             </Grid>
             

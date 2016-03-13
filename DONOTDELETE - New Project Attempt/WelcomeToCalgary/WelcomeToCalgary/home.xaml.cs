@@ -16,13 +16,15 @@ using System.Windows.Shapes;
 namespace WelcomeToCalgary
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for home.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class home : UserControl
     {
-        public MainWindow()
+        StackPanel MainScroll;
+        public home(StackPanel stacker)
         {
             InitializeComponent();
+            MainScroll = stacker;
         }
 
         private void buttPoI_Click(object sender, RoutedEventArgs e)
@@ -51,14 +53,6 @@ namespace WelcomeToCalgary
             UsefulLinks events = new UsefulLinks(MainScroll);
             MainScroll.Children.Clear();
             MainScroll.Children.Add(events);
-        }
-
-        private void buttHome_Click(object sender, RoutedEventArgs e)
-        {
-            home home = new home(MainScroll);
-            MainScroll.Children.Clear();
-            MainScroll.Children.Add(home);
-           
         }
 
     }
