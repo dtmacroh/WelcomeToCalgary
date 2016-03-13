@@ -49,7 +49,7 @@ namespace WelcomeToCalgary
                 else
                 {                         
                     Event.Title = "Feast for the Beast";
-                    Event.Details = "Feast on the delicious food offered by local food trucks with your tradition spain cuisine" +
+                    Event.Details = "Feast on the delicious food offered by local food trucks with your tradition spain cuisine.\n" +
                                         "Date & Time:  May 22, 2016 @ 12PM" + "\n" + "Location: 12th Langdon Ave, Downtown";
                 }
 
@@ -75,7 +75,7 @@ namespace WelcomeToCalgary
                 {
            
                     Event.Title = "Oui Oui Paintnight";
-                    Event.Details = "Come drop by for the night and learn how to paint the Eiffel Tower" +
+                    Event.Details = "Come drop by for the night and learn how to paint the Eiffel Tower.\n" +
                                         "Date & Time: June 5, 2016 @ 6PM" + "\n" + "Location: Louise Painthall, Kensington";
                 }
 
@@ -100,7 +100,7 @@ namespace WelcomeToCalgary
                 else
                 {
                     Event.Title = "Dragon Dance";
-                    Event.Details = "Participate in the annual dragon dance and experience the fiery moves. Bonfire and fireworks during the evening. " +
+                    Event.Details = "Participate in the annual dragon dance and experience the fiery moves. Bonfire and fireworks during the evening.\n " +
                                         "Date & Time: February 20, 2016 @ 4PM" + "\n" + "Location: Dragon City, Downtown";
                 }
 

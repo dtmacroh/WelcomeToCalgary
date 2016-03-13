@@ -49,7 +49,7 @@ namespace WelcomeToCalgary
                 else
                 {
                     Event.Title = "Zoolander";
-                    Event.Details = "Come visit the latest petting zoo with your children to let them play with the tame animals" +
+                    Event.Details = "Come visit the latest petting zoo with your children to let them play with the tame animals.\n" +
                                         "Date & Time: March 30, 2016 @ 11AM"+ "\n" + "Location: Marshmellow Centre";
                 }
 
@@ -74,7 +74,7 @@ namespace WelcomeToCalgary
                 else
                 {
                     Event.Title = "Hot Dog Race";
-                    Event.Details = "Enter your dog to race with other fellow dogs. Hot dogs offered at lunch" +
+                    Event.Details = "Enter your dog to race with other fellow dogs. Hot dogs offered at lunch.\n" +
                                         "Date & Time: April 30, 2016 @ 12PM" + "\n" + "Location: West Hill";
                 }
 
@@ -99,7 +99,7 @@ namespace WelcomeToCalgary
                 else
                 {
                     Event.Title = "Roaring Dinos";
-                    Event.Details = "Come support the local basketball teams as they compete as they become the very best" +
+                    Event.Details = "Come support the local basketball teams as they compete as they become the very best.\n" +
                                         "Date & Time: July 30, 2016 @ 5PM" + "\n" + "Location: Unison Centre";
                 }
 

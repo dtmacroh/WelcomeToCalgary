@@ -19,10 +19,10 @@
             <StackPanel x:Name="MainScroll">
                 <Grid x:Name="HomepageGrid" Height="680">
                     <Image HorizontalAlignment="Left" Height="60" Margin="124,0,0,0" Width="353"/>
-                    <Button x:Name="buttPoICopy" Content="Places of&#xD;&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="136,339,0,0" VerticalAlignment="Top" Width="100" Click="buttPoI_Click" FontSize="16"/>
-                    <Button x:Name="buttCalInfoCopy" Content="Info about&#xD;&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="350,339,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click" FontSize="16"/>
-                    <Button x:Name="buttEventsCopy" Content="Socializing&#xD;&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="136,500,0,0" VerticalAlignment="Top" Width="100" Click="buttEvents_Click" FontSize="16"/>
-                    <Button x:Name="buttLinksCopy" Content="Useful&#xD;&#xA;Links" HorizontalAlignment="Left" Height="50" Margin="350,500,0,0" VerticalAlignment="Top" Width="100" Click="buttLinks_Click" FontSize="16"/>
+                    <Button x:Name="buttPoICopy" Content="Places of&#xD;&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="96,347,0,0" VerticalAlignment="Top" Width="137" Click="buttPoI_Click" FontSize="16"/>
+                    <Button x:Name="buttCalInfoCopy" Content="Info about&#xD;&#xA;Calgary" HorizontalAlignment="Left" Height="52" Margin="344,349,0,0" VerticalAlignment="Top" Width="134" Click="buttCalInfo_Click" FontSize="16"/>
+                    <Button x:Name="buttEventsCopy" Content="Socializing&#xD;&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="96,508,0,0" VerticalAlignment="Top" Width="137" Click="buttEvents_Click" FontSize="16"/>
+                    <Button x:Name="buttLinksCopy" Content="Useful&#xD;&#xA;Links" HorizontalAlignment="Left" Height="50" Margin="344,508,0,0" VerticalAlignment="Top" Width="134" Click="buttLinks_Click" FontSize="16"/>
                     <Image HorizontalAlignment="Left" Margin="-56,-88,-238,463" Width="869" Source="12062659_10209205325558339_513850230_o.jpg"/>
                     <Rectangle HorizontalAlignment="Center" Width="239" Margin="168,151,168,395" Fill="Black"/>
                     <Rectangle HorizontalAlignment="Center" Width="220" Height="120" Margin="168,151,168,395" Fill="White"/>
