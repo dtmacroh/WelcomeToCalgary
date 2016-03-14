@@ -8,11 +8,10 @@ Listed below is the instructions on how to run it, as well as
 the features our system offers.
 
 Instructions 
-1. Unzip file. 
-2. Open DONOTDELETE - New Project Attempt directory
-3. Open WelcomeToCalgary directory
-4. Select and run WelcometoCalgary (Microsoft Visual Studio solution)
-5. Run the application.
+1. Open DONOTDELETE - New Project Attempt directory
+2. Open WelcomeToCalgary directory
+3. Select and run the file WelcometoCalgary.sln (Microsoft Visual Studio solution)
+4. Run the application.
 
 Features
 -Providing information to immigrants. Below are the categories
