@@ -23,11 +23,46 @@
                     <Rectangle HorizontalAlignment="Center" Width="239" Margin="168,151,168,395" Fill="Black"/>
                     <Rectangle HorizontalAlignment="Center" Width="220" Height="120" Margin="168,151,168,395" Fill="White"/>
                     <Image x:Name="calgaryLogo" HorizontalAlignment="Center" Height="103" Margin="0,166,0,0" VerticalAlignment="Top" Width="214" Source="chnw_186_large4presentations.jpg"/>
-                    <Rectangle Fill="#FF282E33" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="475,580,0,0"/>
-                    <Rectangle Fill="#FF25373A" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="465,580,0,0"/>
-                    <Rectangle Fill="#FF164852" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="446.513,580,0,0"/>
-                    <Rectangle Fill="#FF495E67" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="433.457,580,0,0"/>
-                    <Rectangle Fill="#FFFF3838" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="419.214,580,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="475,580,0,0">
+                    	<Rectangle.Fill>
+                    		<RadialGradientBrush>
+                    			<GradientStop Color="Black" Offset="0"/>
+                    			<GradientStop Color="White" Offset="1"/>
+                    		</RadialGradientBrush>
+                    	</Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="465,580,0,0">
+                    	<Rectangle.Fill>
+                    		<RadialGradientBrush>
+                    			<GradientStop Color="Black" Offset="0"/>
+                    			<GradientStop Color="White" Offset="1"/>
+                    		</RadialGradientBrush>
+                    	</Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="446.513,580,0,0">
+                    	<Rectangle.Fill>
+                    		<RadialGradientBrush>
+                    			<GradientStop Color="Black" Offset="0"/>
+                    			<GradientStop Color="White" Offset="1"/>
+                    		</RadialGradientBrush>
+                    	</Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="433.457,580,0,0">
+                    	<Rectangle.Fill>
+                    		<RadialGradientBrush>
+                    			<GradientStop Color="Black" Offset="0"/>
+                    			<GradientStop Color="White" Offset="1"/>
+                    		</RadialGradientBrush>
+                    	</Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="419.214,580,0,0">
+                    	<Rectangle.Fill>
+                    		<RadialGradientBrush>
+                    			<GradientStop Color="Black" Offset="0"/>
+                    			<GradientStop Color="White" Offset="1"/>
+                    		</RadialGradientBrush>
+                    	</Rectangle.Fill>
+                    </Rectangle>
                 </Grid>
             </StackPanel>
         </ScrollViewer>
