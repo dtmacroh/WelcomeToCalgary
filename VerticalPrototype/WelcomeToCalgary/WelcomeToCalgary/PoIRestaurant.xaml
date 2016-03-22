@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="WelcomeToCalgary.PoIRestaurant"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="600">
+    <Grid>
+        <Label Content="Restaurants" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <StackPanel Margin="84,84,81,146" Orientation="Vertical" Height="auto">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Height="auto" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Width="300">
+                    <Run FontWeight="Bold" Text="The Himalayan"/><Run/>
+                    <LineBreak/><Run Language="en-ca" Text="Top-quality Tibetan and Nepalese food, with a lunch buffet offered every weekday."/><LineBreak/></TextBlock>
+                <Image HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="110" Margin="305,0,0,0" Source="the-himalayan.jpg"/>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Bottom" Width="435"/>
+
+            </Grid>
+
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" Text="---More entries to be added soon!---" VerticalAlignment="Top" Width="317"/>
+                <Image HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="70" Margin="365,0,0,0"/>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="0" Margin="0,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="435"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

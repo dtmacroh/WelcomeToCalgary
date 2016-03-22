@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="WelcomeToCalgary.PlacesOfInterest"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="680" d:DesignWidth="600">
+    <Grid Height="680">
+        <Rectangle Fill="#FF424299" HorizontalAlignment="Left" Height="100" Margin="119,93,0,0" Stroke="Black" VerticalAlignment="Top" Width="369"/>
+        <TextBlock HorizontalAlignment="Left" Margin="198,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="30" FontFamily="Segoe WP Black" Text="Places of Interest" Foreground="White" Height="86" Width="211"/>
+        <Button Name="buttPoISports" Content="Sports" HorizontalAlignment="Center" Height="60" Margin="0,411,300,0" VerticalAlignment="Top" Width="100" Click="buttPoISports_Click" FontSize="20"/>
+        <Button Name="buttPoITrending" Content="Trending" HorizontalAlignment="Center" Height="60" Margin="0,211,0,0" VerticalAlignment="Top" Width="100" Click="buttPoITrending_Click" FontSize="20"/>
+        <Button Name="buttPoIReligion" Content="Religious&#xD;&#xA;Sites" HorizontalAlignment="Center" Height="60" Margin="300,411,0,0" VerticalAlignment="Top" Width="100" Click="buttPoIReligion_Click" FontSize="20"/>
+        <Button Name="buttPoIRestaurants" Content="Restaurants" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="100" Margin="0,307,300,0" Click="buttPoIRestaurants_Click" FontSize="18"/>
+        <Button Name="buttPoIRecreational" Content="Recreational&#xD;&#xA;Activities" HorizontalAlignment="Center" Height="60" Margin="0,307,0,0" VerticalAlignment="Top" Width="100" Click="buttPoIRecreational_Click" FontSize="17"/>
+        <Button Name="buttPoINature" Content="Nature and&#xD;&#xA;Outdoors" HorizontalAlignment="Center" Height="60" Margin="300,307,0,0" VerticalAlignment="Top" Width="100" Click="buttPoINature_Click" FontSize="19"/>
+        <Button Name="buttPoIArts" Content="Arts and&#xD;&#xA;Culture" HorizontalAlignment="Center" Height="60" Margin="0,411,0,0" VerticalAlignment="Top" Width="100" Click="buttPoIArts_Click" FontSize="20"/>
+
+    </Grid>
+</UserControl>
