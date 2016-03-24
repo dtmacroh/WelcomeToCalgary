@@ -8,10 +8,10 @@
         Title="MainWindow" Height="800" Width="600">
     <StackPanel>
         <Grid x:Name="HeaderGrid" Height="80">
-            <Button x:Name="buttPoI" Content="Places of&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="10,20,0,0" VerticalAlignment="Top" Width="100" Click="buttPoI_Click" FontSize="16"/>
-            <Button x:Name="buttCalInfo" Content="Info about&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="115,20,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click" FontSize="16"/>
+            <Button x:Name="buttPoI" Content="Places of&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="10,20,0,0" VerticalAlignment="Top" Width="100" Click="buttPoI_Click" FontSize="16" IsEnabled="False"/>
+            <Button x:Name="buttCalInfo" Content="Info about&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="115,20,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click" FontSize="16" IsEnabled="False"/>
             <Button x:Name="buttEvents" Content="Socializing&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="220,20,0,0" VerticalAlignment="Top" Width="100" Click="buttEvents_Click" FontSize="16"/>
-            <Button x:Name="buttLinks" Content="Useful&#xA;Links" HorizontalAlignment="Left" Height="50" Margin="325,20,0,0" VerticalAlignment="Top" Width="100" Click="buttLinks_Click" FontSize="16"/>
+            <Button x:Name="buttLinks" Content="Useful&#xA;Links" HorizontalAlignment="Left" Height="50" Margin="325,20,0,0" VerticalAlignment="Top" Width="100" Click="buttLinks_Click" FontSize="16" IsEnabled="False"/>
             <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="0,79,0,0" Stroke="Black" VerticalAlignment="Top" Width="600"/>
             <Button Name="buttHome" Content="Home" HorizontalAlignment="Left" Margin="473,29,0,0" VerticalAlignment="Top" Width="79" Click="buttHome_Click" Height="29" />
         </Grid>
