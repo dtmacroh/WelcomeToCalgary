@@ -6,65 +6,189 @@
         xmlns:local="clr-namespace:WelcomeToCalgary"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="600">
-    <StackPanel>
-        <Grid x:Name="HeaderGrid" Height="80">
+	<Window.Resources>
+		<Storyboard x:Key="startup">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image">
+				<EasingDoubleKeyFrame KeyTime="0" Value="10.449"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="10.449"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="10.449"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.9" Value="8.211"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="HeaderGrid">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0.005"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.59"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="calgaryLogo">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.19"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.8" Value="0.91"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0.425"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.9" Value="0.995"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle1">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle2">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle2">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle1">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle3">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle4">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle5">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="calgaryLogo">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:2.8" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle6">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle6">
+				<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.46"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.8" Value="0.95"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image">
+				<EasingDoubleKeyFrame KeyTime="0" Value="1.493"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image">
+				<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.9" Value="0.986"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle7">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="stackPanel">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.8" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="eventsSelection"/>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource startup}"/>
+			<BeginStoryboard Storyboard="{StaticResource eventsSelection}"/>
+		</EventTrigger>
+	</Window.Triggers>
+    <StackPanel x:Name="stackPanel">
+        <Grid x:Name="HeaderGrid" Height="80" Background="Black">
             <Button x:Name="buttPoI" Content="Places of&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="10,20,0,0" VerticalAlignment="Top" Width="100" Click="buttPoI_Click" FontSize="16" IsEnabled="False"/>
             <Button x:Name="buttCalInfo" Content="Info about&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="115,20,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click" FontSize="16" IsEnabled="False"/>
-            <Button x:Name="buttEvents" Content="Socializing&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="220,20,0,0" VerticalAlignment="Top" Width="100" Click="buttEvents_Click" FontSize="16"/>
-            <Button x:Name="buttLinks" Content="Useful&#xA;Links" HorizontalAlignment="Left" Height="50" Margin="325,20,0,0" VerticalAlignment="Top" Width="100" Click="buttLinks_Click" FontSize="16" IsEnabled="False"/>
+            <Button x:Name="buttEvents" Content="Socializing&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="220,20,0,0" VerticalAlignment="Top" Width="100" Click="buttEvents_Click" FontSize="14.667" BorderThickness="0" FontFamily="Pericles" RenderTransformOrigin="0,0" Background="#FFFBFBFB" BorderBrush="#FFF9F9F9">
+            	<Button.Effect>
+            		<DropShadowEffect BlurRadius="0" Opacity="0"/>
+            	</Button.Effect>
+            </Button>
+            <Button x:Name="buttLinks" Content="Useful&#xA;Links" HorizontalAlignment="Left" Height="50" Margin="325,20,0,0" VerticalAlignment="Top" Width="100" Click="buttLinks_Click" FontSize="16" IsEnabled="False" BorderThickness="1"/>
             <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="0,79,0,0" Stroke="Black" VerticalAlignment="Top" Width="600"/>
             <Button Name="buttHome" Content="Home" HorizontalAlignment="Left" Margin="473,29,0,0" VerticalAlignment="Top" Width="79" Click="buttHome_Click" Height="29" />
+            
         </Grid>
 
-        <ScrollViewer x:Name="MainViewer" Height="680">
+        
             <StackPanel x:Name="MainScroll">
-                <Grid x:Name="HomepageGrid" Height="680">
-                    <Image HorizontalAlignment="Left" Margin="-56,-88,-238,463" Width="869" Source="12062659_10209205325558339_513850230_o.jpg"/>
-                    <Rectangle HorizontalAlignment="Center" Width="239" Margin="168,151,168,395" Fill="Black"/>
-                    <Rectangle HorizontalAlignment="Center" Width="220" Height="120" Margin="168,151,168,395" Fill="White"/>
-                    <Image x:Name="calgaryLogo" HorizontalAlignment="Center" Height="103" Margin="0,166,0,0" VerticalAlignment="Top" Width="214" Source="chnw_186_large4presentations.jpg"/>
-                    <Rectangle HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="475,580,0,0">
-                    	<Rectangle.Fill>
-                    		<RadialGradientBrush>
-                    			<GradientStop Color="Black" Offset="0"/>
-                    			<GradientStop Color="White" Offset="1"/>
-                    		</RadialGradientBrush>
-                    	</Rectangle.Fill>
-                    </Rectangle>
-                    <Rectangle HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="465,580,0,0">
-                    	<Rectangle.Fill>
-                    		<RadialGradientBrush>
-                    			<GradientStop Color="Black" Offset="0"/>
-                    			<GradientStop Color="White" Offset="1"/>
-                    		</RadialGradientBrush>
-                    	</Rectangle.Fill>
-                    </Rectangle>
-                    <Rectangle HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="446.513,580,0,0">
-                    	<Rectangle.Fill>
-                    		<RadialGradientBrush>
-                    			<GradientStop Color="Black" Offset="0"/>
-                    			<GradientStop Color="White" Offset="1"/>
-                    		</RadialGradientBrush>
-                    	</Rectangle.Fill>
-                    </Rectangle>
-                    <Rectangle HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="433.457,580,0,0">
-                    	<Rectangle.Fill>
-                    		<RadialGradientBrush>
-                    			<GradientStop Color="Black" Offset="0"/>
-                    			<GradientStop Color="White" Offset="1"/>
-                    		</RadialGradientBrush>
-                    	</Rectangle.Fill>
-                    </Rectangle>
-                    <Rectangle HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="419.214,580,0,0">
-                    	<Rectangle.Fill>
-                    		<RadialGradientBrush>
-                    			<GradientStop Color="Black" Offset="0"/>
-                    			<GradientStop Color="White" Offset="1"/>
-                    		</RadialGradientBrush>
-                    	</Rectangle.Fill>
-                    </Rectangle>
-                </Grid>
-            </StackPanel>
-        </ScrollViewer>
+            <Grid x:Name="HomepageGrid" Height="680" RenderTransformOrigin="0.5,0.5">
+            	<Grid.Background>
+            		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            			<GradientStop Color="Black"/>
+            			<GradientStop Color="#FF6A2C2C" Offset="0.996"/>
+            			<GradientStop Color="#FF173C4D" Offset="0.522"/>
+            		</LinearGradientBrush>
+            	</Grid.Background>
+            	<Grid.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Grid.RenderTransform>
+            	<Image x:Name="image" HorizontalAlignment="Left" Margin="-99.866,0,-177.134,395" Width="869" Source="12062659_10209205325558339_513850230_o.jpg" Opacity="0.925" RenderTransformOrigin="0.5,0.5">
+            		<Image.RenderTransform>
+            			<TransformGroup>
+            				<ScaleTransform/>
+            				<SkewTransform/>
+            				<RotateTransform/>
+            				<TranslateTransform/>
+            			</TransformGroup>
+            		</Image.RenderTransform>
+            	</Image>
+            	<Rectangle x:Name="rectangle" HorizontalAlignment="Center" Width="239" Margin="168,151,168,395" Fill="Black"/>
+            	<Rectangle x:Name="rectangle6" HorizontalAlignment="Center" Width="220" Height="120" Margin="168,151,168,395" Fill="White"/>
+            	<Image x:Name="calgaryLogo" HorizontalAlignment="Center" Height="103" Margin="0,166,0,0" VerticalAlignment="Top" Width="214" Source="chnw_186_large4presentations.jpg"/>
+            	<Rectangle x:Name="rectangle5" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="475,580,0,0">
+            		<Rectangle.Fill>
+            			<RadialGradientBrush>
+            				<GradientStop Color="Black" Offset="0"/>
+            				<GradientStop Color="White" Offset="1"/>
+            			</RadialGradientBrush>
+            		</Rectangle.Fill>
+            	</Rectangle>
+            	<Rectangle x:Name="rectangle2" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="465,580,0,0">
+            		<Rectangle.Fill>
+            			<RadialGradientBrush>
+            				<GradientStop Color="Black" Offset="0"/>
+            				<GradientStop Color="White" Offset="1"/>
+            			</RadialGradientBrush>
+            		</Rectangle.Fill>
+            	</Rectangle>
+            	<Rectangle x:Name="rectangle4" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="446.513,580,0,0">
+            		<Rectangle.Fill>
+            			<RadialGradientBrush>
+            				<GradientStop Color="Black" Offset="0"/>
+            				<GradientStop Color="White" Offset="1"/>
+            			</RadialGradientBrush>
+            		</Rectangle.Fill>
+            	</Rectangle>
+            	<Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="433.457,580,0,0">
+            		<Rectangle.Fill>
+            			<RadialGradientBrush>
+            				<GradientStop Color="Black" Offset="0"/>
+            				<GradientStop Color="White" Offset="1"/>
+            			</RadialGradientBrush>
+            		</Rectangle.Fill>
+            	</Rectangle>
+            	<Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="419.214,580,0,0">
+            		<Rectangle.Fill>
+            			<RadialGradientBrush>
+            				<GradientStop Color="Black" Offset="0"/>
+            				<GradientStop Color="White" Offset="1"/>
+            			</RadialGradientBrush>
+            		</Rectangle.Fill>
+            	</Rectangle>
+            	<Rectangle x:Name="rectangle7" Fill="Black" HorizontalAlignment="Left" Height="15" Margin="0,284,0,0" VerticalAlignment="Top" Width="592"/>
+            </Grid>
+        </StackPanel>
+        <Image Height="100"/>
+
     </StackPanel>
 </Window>
