@@ -5,17 +5,86 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="620" d:DesignWidth="600">
-    <Grid>
-        <Grid x:Name="HomepageGrid" Height="680">
-            <Image HorizontalAlignment="Left" Height="60" Margin="124,0,0,0" Width="353"/>
-            <Button x:Name="buttPoICopy" Content="Places of&#xD;&#xA;Interest" HorizontalAlignment="Left" Height="50" Margin="136,339,0,0" VerticalAlignment="Top" Width="100" Click="buttPoI_Click" FontSize="16"/>
-            <Button x:Name="buttCalInfoCopy" Content="Info about&#xD;&#xA;Calgary" HorizontalAlignment="Left" Height="50" Margin="350,339,0,0" VerticalAlignment="Top" Width="100" Click="buttCalInfo_Click" FontSize="16"/>
-            <Button x:Name="buttEventsCopy" Content="Socializing&#xD;&#xA;and Events" HorizontalAlignment="Left" Height="50" Margin="136,500,0,0" VerticalAlignment="Top" Width="100" Click="buttEvents_Click" FontSize="16"/>
-            <Button x:Name="buttLinksCopy" Content="Useful&#xD;&#xA;Links" HorizontalAlignment="Left" Height="50" Margin="350,500,0,0" VerticalAlignment="Top" Width="100" Click="buttLinks_Click" FontSize="16"/>
-            <Image HorizontalAlignment="Left" Margin="-56,-88,-238,463" Width="869" Source="12062659_10209205325558339_513850230_o.jpg"/>
-            <Rectangle HorizontalAlignment="Center" Width="239" Margin="168,151,168,395" Fill="Black"/>
-            <Rectangle HorizontalAlignment="Center" Width="220" Height="120" Margin="168,151,168,395" Fill="White"/>
-            <Image x:Name="calgaryLogo" HorizontalAlignment="Center" Height="103" Margin="0,166,0,0" VerticalAlignment="Top" Width="214" Source="chnw_186_large4presentations.jpg"/>
-        </Grid>
-    </Grid>
+
+    
+    <StackPanel x:Name="stackPanel">
+        
+
+
+        <StackPanel x:Name="MainScrollCopy">
+            <Grid x:Name="HomepageGrid" Height="680" RenderTransformOrigin="0.5,0.5">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF6A2C2C" Offset="0.996"/>
+                        <GradientStop Color="#FF173C4D" Offset="0.522"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Image x:Name="image" HorizontalAlignment="Left" Margin="-99.866,0,-177.134,395" Width="869" Source="12062659_10209205325558339_513850230_o.jpg" Opacity="0.925" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Rectangle x:Name="rectangle" HorizontalAlignment="Center" Width="239" Margin="168,151,168,395" Fill="Black"/>
+                <Rectangle x:Name="rectangle6" HorizontalAlignment="Center" Width="220" Height="120" Margin="168,151,168,395" Fill="White"/>
+                <Image x:Name="calgaryLogo" HorizontalAlignment="Center" Height="103" Margin="0,166,0,0" VerticalAlignment="Top" Width="214" Source="chnw_186_large4presentations.jpg"/>
+                <Rectangle x:Name="rectangle5" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="475,580,0,0">
+                    <Rectangle.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="rectangle2" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="465,580,0,0">
+                    <Rectangle.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="rectangle4" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="446.513,580,0,0">
+                    <Rectangle.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="433.457,580,0,0">
+                    <Rectangle.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="419.214,580,0,0">
+                    <Rectangle.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="rectangle7" Fill="Black" HorizontalAlignment="Left" Height="15" Margin="0,284,0,0" VerticalAlignment="Top" Width="592"/>
+            </Grid>
+        </StackPanel>
+        <Image Height="100"/>
+
+    </StackPanel>
 </UserControl>
