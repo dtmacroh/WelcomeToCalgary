@@ -188,7 +188,11 @@
             	<Rectangle x:Name="rectangle7" Fill="Black" HorizontalAlignment="Left" Height="15" Margin="0,284,0,0" VerticalAlignment="Top" Width="592"/>
             	<Grid x:Name="EventsFilterPanel" HorizontalAlignment="Left" Height="680" VerticalAlignment="Top" Width="171.5">
             		<Rectangle x:Name="FilterBackgroundRectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="680" Stroke="Black" VerticalAlignment="Top" Width="171.5"/>
-            		<TextBlock x:Name="FilterTitle" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151.5" FontSize="14.667" TextAlignment="Center" TextDecorations="Underline"><Run Language="en-ca" Text="Filter Events"/></TextBlock>
+            		<TextBlock x:Name="FilterTitle" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151.5" FontSize="14.667" TextAlignment="Center" TextDecorations="Underline" Foreground="Black"><Run Language="en-ca" Text="Filter Events"/></TextBlock>
+            		<Button x:Name="AreaFilter" Content="By Area" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="0,50,0,0" BorderThickness="0" Background="#FFF4F4F5"/>
+            		<Button x:Name="CultureFilter" Content="By Culture" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,100,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
+            		<Button x:Name="AgeFilter" Content="By Age" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,150,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
+            		<Button x:Name="FreeFilter" Content="Show Only&#xD;&#xA;Free Events" HorizontalAlignment="Center" VerticalAlignment="Top" Width="71" Margin="48.25,200,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
             	</Grid>
             </Grid>
         </StackPanel>
