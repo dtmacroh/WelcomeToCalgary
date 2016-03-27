@@ -240,6 +240,7 @@
     <Resource Include="Bitmap1.bmp" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Events_Cal.jpg" />
     <Resource Include="hockey.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -264,6 +265,7 @@
     <Resource Include="ConfederationGolf.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="slide3.jpg" />
     <Resource Include="SoccerCentre.jpg" />
   </ItemGroup>
   <ItemGroup>

@@ -5,15 +5,17 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="680" d:DesignWidth="600">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="149*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Rectangle Fill="#FF424299" HorizontalAlignment="Left" Height="100" Margin="119,93,0,0" Stroke="Black" VerticalAlignment="Top" Width="369"/>
-        <TextBlock HorizontalAlignment="Left" Margin="222,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="48" RenderTransformOrigin="0.345,-0.739" FontFamily="Segoe WP Black" Text="Events" Foreground="White" Height="64" Width="156"/>
-        <Button Name="ButtArea" Content="Search by Area" HorizontalAlignment="Left" Margin="159,308,0,0" VerticalAlignment="Top" Width="282" Height="71" FontSize="22" FontFamily="Segoe WP Semibold" Click="ButtArea_Click"/>
-        <Button Name="ButtSearch" Content="Search by Culture" HorizontalAlignment="Left" Margin="159,467,0,0" VerticalAlignment="Top" Width="282" Height="70" FontSize="22" FontFamily="Segoe WP Semibold" Click="ButtSearch_Click"/>
+    <ScrollViewer HorizontalAlignment="Left" Height="680" VerticalAlignment="Top" Width="600">
+		<Grid Background="#FF424242" Height="680" Width="600">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="149*"/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<TextBlock x:Name="FilterTitle" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151.5" FontSize="14.667" TextAlignment="Center" TextDecorations="Underline"><Run Language="en-ca" Text="Filter Events"/></TextBlock>
+			<Image Margin="166.5,0,-154.416,471" Source="Events_Cal.jpg" Stretch="Fill" Grid.ColumnSpan="2" Opacity="0.9"/>
+			<Rectangle x:Name="FilterBackgroundRectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="680" Stroke="Black" VerticalAlignment="Top" Width="171.5"/>
+			<TextBlock HorizontalAlignment="Left" Height="138.5" Margin="253,122.673,-38.5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385.5" FontSize="80" FontFamily="Segoe WP Black" TextAlignment="Center" Foreground="#FFC53131" Grid.ColumnSpan="2"><Run Foreground="White" Text="Events"/></TextBlock>
 
-    </Grid>
+		</Grid>
+	</ScrollViewer>
 </UserControl>
