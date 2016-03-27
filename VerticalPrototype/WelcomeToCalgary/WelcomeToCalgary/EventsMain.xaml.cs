@@ -29,7 +29,7 @@ namespace WelcomeToCalgary
 
         }
 
-        private void ButtArea_Click(object sender, RoutedEventArgs e)
+       /* private void ButtArea_Click(object sender, RoutedEventArgs e)
         {
             EventAreaSelect area = new EventAreaSelect(mainScroll);
             mainScroll.Children.Clear();
@@ -41,6 +41,6 @@ namespace WelcomeToCalgary
             EventCultureSelect culture = new EventCultureSelect(mainScroll);
             mainScroll.Children.Clear();
             mainScroll.Children.Add(culture);
-        }
+        }*/
     }
 }
