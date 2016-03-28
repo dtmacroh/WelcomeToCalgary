@@ -21,7 +21,7 @@
 				<Button x:Name="AreaFilter" Content="By Area" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="0,50,0,0" BorderThickness="0" Background="#FFF4F4F5"/>
 				<Button x:Name="CultureFilter" Content="By Culture" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,100,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
 				<Button x:Name="AgeFilter" Content="By Age" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,150,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
-				<Button x:Name="FreeFilter" Content="Show Only&#xA;Free Events" HorizontalAlignment="Center" VerticalAlignment="Top" Width="71" Margin="48.25,200,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
+				<CheckBox x:Name="FreeFilter" Content="Show Only&#xD;&#xA;Free Events" HorizontalAlignment="Left" Height="33.92" Margin="38.339,192.937,0,0" VerticalAlignment="Top" Width="96.027"/>
 			</Grid>
 			<Grid x:Name="CultureFilterPopup" HorizontalAlignment="Left" Height="238.116" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="256.5" Background="#FFF4F4F5">
 				<TextBlock x:Name="CultureFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Culture..."/></TextBlock>
