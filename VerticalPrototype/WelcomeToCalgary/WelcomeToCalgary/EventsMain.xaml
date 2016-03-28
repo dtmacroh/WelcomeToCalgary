@@ -6,7 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="680" d:DesignWidth="600">
     <ScrollViewer HorizontalAlignment="Left" Height="680" VerticalAlignment="Top" Width="600">
-		<Grid Background="#FF424242" Height="680" Width="600">
+		<Grid Background="#FF424242" Height="680" Width="600" Opacity="0.98">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="149*"/>
 				<ColumnDefinition/>
@@ -23,14 +23,27 @@
 				<Button x:Name="AgeFilter" Content="By Age" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,150,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
 				<Button x:Name="FreeFilter" Content="Show Only&#xA;Free Events" HorizontalAlignment="Center" VerticalAlignment="Top" Width="71" Margin="48.25,200,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
 			</Grid>
-			<Grid x:Name="CultureFilterPopup" HorizontalAlignment="Left" Height="225" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="256.5" Background="#FFF4F4F5">
+			<Grid x:Name="CultureFilterPopup" HorizontalAlignment="Left" Height="238.116" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="256.5" Background="#FFF4F4F5">
 				<TextBlock x:Name="CultureFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Culture..."/></TextBlock>
 				<ListBox x:Name="CultureFilterOptions" HorizontalAlignment="Center" Height="142.5" Margin="0,56,0,0" VerticalAlignment="Top" Width="198">
-					<ListBoxItem Content="ListBoxItem"/>
-					<ListBoxItem Content="ListBoxItem"/>
-					<ListBoxItem Content="ListBoxItem"/>
-					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem x:Name="CultureSA" Content="South American"/>
+					<ListBoxItem x:Name="CultureEU" Content="European"/>
+					<ListBoxItem x:Name="CultureAS" Content="Asian"/>
+					<ListBoxItem x:Name="CultureAF" Content="African"/>
 				</ListBox>
+				<Button x:Name="AgeApplyFilter1" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="157.402,203.5,0,0" VerticalAlignment="Top" Width="79.703"/>
+				<Button x:Name="AgeCloseButton1" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="213,5,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
+			</Grid>
+			<Grid x:Name="AgeFilterPopup" HorizontalAlignment="Left" Height="238.115" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="256.5" Background="#FFF4F4F5">
+				<TextBlock x:Name="AgeFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Age..."/></TextBlock>
+				<ListBox x:Name="AgeFilterOptions" HorizontalAlignment="Center" Height="142.5" Margin="0,56,0,0" VerticalAlignment="Top" Width="198">
+					<ListBoxItem x:Name="AgeKid" Content="Children"/>
+					<ListBoxItem x:Name="AgeTeen" Content="Teen and Young Adult"/>
+					<ListBoxItem x:Name="AgeAdult" Content="Adult"/>
+					<ListBoxItem x:Name="AgeSenior" Content="Senior"/>
+				</ListBox>
+				<Button x:Name="AgeApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="157.402,203.5,0,0" VerticalAlignment="Top" Width="79.703"/>
+				<Button x:Name="AgeCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="213,5,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
 			</Grid>
 
 		</Grid>
