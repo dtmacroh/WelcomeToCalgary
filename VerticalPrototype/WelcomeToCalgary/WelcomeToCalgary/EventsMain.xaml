@@ -15,6 +15,23 @@
 			<Image Margin="166.5,0,-154.416,471" Source="Events_Cal.jpg" Stretch="Fill" Grid.ColumnSpan="2" Opacity="0.9"/>
 			<Rectangle x:Name="FilterBackgroundRectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="680" Stroke="Black" VerticalAlignment="Top" Width="171.5"/>
 			<TextBlock HorizontalAlignment="Left" Height="138.5" Margin="253,122.673,-38.5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385.5" FontSize="80" FontFamily="Segoe WP Black" TextAlignment="Center" Foreground="#FFC53131" Grid.ColumnSpan="2"><Run Foreground="White" Text="Events"/></TextBlock>
+			<Grid x:Name="EventsFilterPanel" HorizontalAlignment="Left" Height="680" VerticalAlignment="Top" Width="171.5">
+				<Rectangle x:Name="FilterBackgroundRectangle1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="680" Stroke="Black" VerticalAlignment="Top" Width="171.5"/>
+				<TextBlock x:Name="FilterTitle1" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151.5" FontSize="14.667" TextAlignment="Center" TextDecorations="Underline" Foreground="Black"><Run Language="en-ca" Text="Filter Events"/></TextBlock>
+				<Button x:Name="AreaFilter" Content="By Area" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="0,50,0,0" BorderThickness="0" Background="#FFF4F4F5"/>
+				<Button x:Name="CultureFilter" Content="By Culture" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,100,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
+				<Button x:Name="AgeFilter" Content="By Age" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,150,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
+				<Button x:Name="FreeFilter" Content="Show Only&#xA;Free Events" HorizontalAlignment="Center" VerticalAlignment="Top" Width="71" Margin="48.25,200,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
+			</Grid>
+			<Grid x:Name="CultureFilterPopup" HorizontalAlignment="Left" Height="225" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="256.5" Background="#FFF4F4F5">
+				<TextBlock x:Name="CultureFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Culture..."/></TextBlock>
+				<ListBox x:Name="CultureFilterOptions" HorizontalAlignment="Center" Height="142.5" Margin="0,56,0,0" VerticalAlignment="Top" Width="198">
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+				</ListBox>
+			</Grid>
 
 		</Grid>
 	</ScrollViewer>
