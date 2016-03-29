@@ -70,195 +70,16 @@
 				<EasingDoubleKeyFrame KeyTime="0:0:2.8" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
-		<Storyboard x:Key="eventsSelection">
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="0.105"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="0.45"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:3.1" Value="0.6"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
-				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="0.11"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:2.8" Value="0.355"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="0.61"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
-				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="0.135"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.135"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:3.9" Value="0.535"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image1">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-18"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-2"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image2">
-				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-18"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:2.8" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image2">
-				<EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:2.8" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image3">
-				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="-18"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="-2"/>
-			</DoubleAnimationUsingKeyFrames>
-		</Storyboard>
-		<Storyboard x:Key="continuedLoop" RepeatBehavior="Forever">
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.BlurRadius)" Storyboard.TargetName="image5">
-				<EasingDoubleKeyFrame KeyTime="0:0:12" Value="21"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.67"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.67"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.76"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image4">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.7"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image5">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.655"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image2_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="1341.5"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image2_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image1_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="1332"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image1_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:24" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:30.6" Value="-102"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image5">
-				<EasingDoubleKeyFrame KeyTime="0" Value="-2"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image5">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image1">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image2">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image3">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image4">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
+		<Storyboard x:Key="continuedLoop_new" RepeatBehavior="Forever">
 			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="uniformGrid">
-				<EasingDoubleKeyFrame KeyTime="0:0:29.1" Value="-1272"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:30.6" Value="-1332"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image3_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="968.5"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:29" Value="960.5"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:29.2" Value="947"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:29.9" Value="917.25"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:30.5" Value="891.179"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:30.7" Value="887.179"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image3_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="-384"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:30.5" Value="-384"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:30.6" Value="-382.5"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:30.7" Value="-384"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.995"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:24" Value="0.67"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:24" Value="0.68"/>
-			</DoubleAnimationUsingKeyFrames>
-			<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="image1_Copy">
-				<EasingThicknessKeyFrame KeyTime="0:0:24" Value="0,-102.667,203.045,0"/>
-				<EasingThicknessKeyFrame KeyTime="0:0:30.6" Value="0,0,203.045,-102.666666666667"/>
-			</ThicknessAnimationUsingKeyFrames>
-		</Storyboard>
-		<Storyboard x:Key="continuedLoop_Copy1">
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.BlurRadius)" Storyboard.TargetName="image5">
-				<EasingDoubleKeyFrame KeyTime="0:0:12" Value="21"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.67"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.67"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.76"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image4">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.7"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image5">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0.655"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image2_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="1341.5"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image2_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image1_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="1332"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image1_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image5">
-				<EasingDoubleKeyFrame KeyTime="0" Value="-2"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image5">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image1">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image2">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image3">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image4">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="uniformGrid">
-				<EasingDoubleKeyFrame KeyTime="0:0:24" Value="-1272"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:25" Value="-1332"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image3_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="968.5"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:23.9" Value="960.5"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:25" Value="892.5"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image3_Copy">
-				<EasingDoubleKeyFrame KeyTime="0" Value="-384"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:37" Value="-1342"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</Window.Resources>
 	<Window.Triggers>
 		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
 			<BeginStoryboard Storyboard="{StaticResource startup}"/>
-			<BeginStoryboard Storyboard="{StaticResource eventsSelection}"/>
-			<BeginStoryboard Storyboard="{StaticResource continuedLoop}"/>
+			<BeginStoryboard Storyboard="{StaticResource continuedLoop_new}"/>
 		</EventTrigger>
 	</Window.Triggers>
     <StackPanel x:Name="stackPanel">
@@ -313,7 +134,7 @@
             	<Image x:Name="calgaryLogo" HorizontalAlignment="Center" Height="103" Margin="190,166,190,0" VerticalAlignment="Top" Width="214" Source="chnw_186_large4presentations.jpg"/>
             	<Rectangle x:Name="rectangle7" Fill="Black" HorizontalAlignment="Left" Height="15" Margin="0,284,0,0" VerticalAlignment="Top" Width="592"/>
             	<Canvas Margin="297,0,-355,390"/>
-            	<UniformGrid x:Name="uniformGrid" Margin="10,399,-721.134,127" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+            	<UniformGrid x:Name="uniformGrid" Margin="10,399,-1513.045,127" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
             		<UniformGrid.RenderTransform>
             			<TransformGroup>
             				<ScaleTransform/>
@@ -322,7 +143,7 @@
             				<TranslateTransform/>
             			</TransformGroup>
             		</UniformGrid.RenderTransform>
-            		<Image x:Name="image1" Margin="0,0,203.045,-102.667" Source="pack://siteoforigin:,,,/south-america1.jpg" Stretch="Fill" Opacity="0.995" RenderTransformOrigin="0.5,0.5">
+            		<Image x:Name="image3_Copy" Margin="1857.045,0,-1398.03,-102.667" Source="calgaryCulture.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.655">
             			<Image.RenderTransform>
             				<TransformGroup>
             					<ScaleTransform/>
@@ -331,11 +152,14 @@
             					<TranslateTransform/>
             				</TransformGroup>
             			</Image.RenderTransform>
+            			<Image.Effect>
+            				<DropShadowEffect BlurRadius="46"/>
+            			</Image.Effect>
+            		</Image>
+            		<Image x:Name="image1" Source="pack://siteoforigin:,,,/south-america1.jpg" Stretch="Fill" Opacity="0.655" RenderTransformOrigin="0.5,0.5" Margin="-699.015,0,1166.03,-102.667">
             			<Image.Effect>
             				<DropShadowEffect BlurRadius="46" ShadowDepth="8"/>
             			</Image.Effect>
-            		</Image>
-            		<Image x:Name="image2" Margin="-181.045,0,376.089,-102.667" Source="soccer.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             			<Image.RenderTransform>
             				<TransformGroup>
             					<ScaleTransform/>
@@ -344,11 +168,11 @@
             					<TranslateTransform/>
             				</TransformGroup>
             			</Image.RenderTransform>
+            		</Image>
+            		<Image x:Name="image2" Source="soccer.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="-1144.03,0,1603.045,-102.667" Opacity="0.655">
             			<Image.Effect>
             				<DropShadowEffect BlurRadius="45" Direction="467" ShadowDepth="8"/>
             			</Image.Effect>
-            		</Image>
-            		<Image x:Name="image3" Margin="-350.955,0,546,-102.667" Source="calgaryCulture.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             			<Image.RenderTransform>
             				<TransformGroup>
             					<ScaleTransform/>
@@ -357,11 +181,11 @@
             					<TranslateTransform/>
             				</TransformGroup>
             			</Image.RenderTransform>
+            		</Image>
+            		<Image x:Name="image3" Source="calgaryCulture.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="519.134,-51.333,-60.119,-51.333" Opacity="0.655">
             			<Image.Effect>
             				<DropShadowEffect BlurRadius="46"/>
             			</Image.Effect>
-            		</Image>
-            		<Image x:Name="image4" Margin="789.134,-51.333,-594.089,-51.333" Source="calgaryHeadModel.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             			<Image.RenderTransform>
             				<TransformGroup>
             					<ScaleTransform/>
@@ -370,11 +194,21 @@
             					<TranslateTransform/>
             				</TransformGroup>
             			</Image.RenderTransform>
+            		</Image>
+            		<Image x:Name="image4" Source="calgaryHeadModel.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="90.119,-51.333,368.896,-51.333" Opacity="0.655">
             			<Image.Effect>
             				<DropShadowEffect BlurRadius="46"/>
             			</Image.Effect>
+            			<Image.RenderTransform>
+            				<TransformGroup>
+            					<ScaleTransform/>
+            					<SkewTransform/>
+            					<RotateTransform/>
+            					<TranslateTransform/>
+            				</TransformGroup>
+            			</Image.RenderTransform>
             		</Image>
-            		<Image x:Name="image5" Margin="630.089,-51.333,-435.045,-51.333" Source="pack://siteoforigin:,,,/calgaryBridge.JPG" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            		<Image x:Name="image5" Source="pack://siteoforigin:,,,/calgaryBridge.JPG" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="-336.53,-51.333,795.545,-51.333" Opacity="0.655">
             			<Image.Effect>
             				<DropShadowEffect/>
             			</Image.Effect>
@@ -387,20 +221,10 @@
             				</TransformGroup>
             			</Image.RenderTransform>
             		</Image>
-            		<Image x:Name="image2_Copy" Margin="-616.089,-51.333,811.134,-51.333" Source="soccer.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            			<Image.RenderTransform>
-            				<TransformGroup>
-            					<ScaleTransform/>
-            					<SkewTransform/>
-            					<RotateTransform/>
-            					<TranslateTransform/>
-            				</TransformGroup>
-            			</Image.RenderTransform>
+            		<Image x:Name="image2_Copy" Source="soccer.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="1593.5,-102.667,-1134.485,0" Opacity="0.655">
             			<Image.Effect>
             				<DropShadowEffect BlurRadius="45" Direction="467" ShadowDepth="8"/>
             			</Image.Effect>
-            		</Image>
-            		<Image x:Name="image1_Copy" Margin="0,-102.667,203.045,0" Source="pack://siteoforigin:,,,/south-america1.jpg" Stretch="Fill" Opacity="0.995" RenderTransformOrigin="0.5,0.5">
             			<Image.RenderTransform>
             				<TransformGroup>
             					<ScaleTransform/>
@@ -409,27 +233,24 @@
             					<TranslateTransform/>
             				</TransformGroup>
             			</Image.RenderTransform>
+            		</Image>
+            		<Image x:Name="image1_Copy" Source="pack://siteoforigin:,,,/south-america1.jpg" Stretch="Fill" Opacity="0.655" RenderTransformOrigin="0.5,0.5" Margin="635.485,-102.667,-168.47,0">
             			<Image.Effect>
             				<DropShadowEffect BlurRadius="46" ShadowDepth="8"/>
             			</Image.Effect>
+            			<Image.RenderTransform>
+            				<TransformGroup>
+            					<ScaleTransform/>
+            					<SkewTransform/>
+            					<RotateTransform/>
+            					<TranslateTransform/>
+            				</TransformGroup>
+            			</Image.RenderTransform>
             		</Image>
             	</UniformGrid>
             </Grid>
         </StackPanel>
-        <Image Height="100"/>
-        <Image x:Name="image3_Copy" Margin="-350.955,0,704.955,0" Source="calgaryCulture.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Height="154">
-        	<Image.RenderTransform>
-        		<TransformGroup>
-        			<ScaleTransform/>
-        			<SkewTransform/>
-        			<RotateTransform/>
-        			<TranslateTransform/>
-        		</TransformGroup>
-        	</Image.RenderTransform>
-        	<Image.Effect>
-        		<DropShadowEffect BlurRadius="46"/>
-        	</Image.Effect>
-        </Image>
+            <Image Height="100"/>
 
     </StackPanel>
 </Window>

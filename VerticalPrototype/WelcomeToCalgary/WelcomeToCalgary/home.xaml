@@ -5,6 +5,26 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="620" d:DesignWidth="600">
+	<UserControl.Resources>
+		<Storyboard x:Key="continuedLoop" RepeatBehavior="Forever">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="uniformGrid">
+				<EasingDoubleKeyFrame KeyTime="0:0:37" Value="-1332"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="fadeinMenu">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="HomepageGrid">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.995"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+	<UserControl.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			
+			<BeginStoryboard Storyboard="{StaticResource fadeinMenu}"/>
+			<BeginStoryboard Storyboard="{StaticResource continuedLoop}"/>
+		</EventTrigger>
+	</UserControl.Triggers>
 
     
     <StackPanel x:Name="stackPanel">
@@ -41,47 +61,121 @@
                 <Rectangle x:Name="rectangle" HorizontalAlignment="Center" Width="239" Margin="168,151,168,395" Fill="Black"/>
                 <Rectangle x:Name="rectangle6" HorizontalAlignment="Center" Width="220" Height="120" Margin="168,151,168,395" Fill="White"/>
                 <Image x:Name="calgaryLogo" HorizontalAlignment="Center" Height="103" Margin="0,166,0,0" VerticalAlignment="Top" Width="214" Source="chnw_186_large4presentations.jpg"/>
-                <Rectangle x:Name="rectangle5" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="475,580,0,0">
-                    <Rectangle.Fill>
-                        <RadialGradientBrush>
-                            <GradientStop Color="Black" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </RadialGradientBrush>
-                    </Rectangle.Fill>
-                </Rectangle>
-                <Rectangle x:Name="rectangle2" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="465,580,0,0">
-                    <Rectangle.Fill>
-                        <RadialGradientBrush>
-                            <GradientStop Color="Black" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </RadialGradientBrush>
-                    </Rectangle.Fill>
-                </Rectangle>
-                <Rectangle x:Name="rectangle4" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="446.513,580,0,0">
-                    <Rectangle.Fill>
-                        <RadialGradientBrush>
-                            <GradientStop Color="Black" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </RadialGradientBrush>
-                    </Rectangle.Fill>
-                </Rectangle>
-                <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="433.457,580,0,0">
-                    <Rectangle.Fill>
-                        <RadialGradientBrush>
-                            <GradientStop Color="Black" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </RadialGradientBrush>
-                    </Rectangle.Fill>
-                </Rectangle>
-                <Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="419.214,580,0,0">
-                    <Rectangle.Fill>
-                        <RadialGradientBrush>
-                            <GradientStop Color="Black" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </RadialGradientBrush>
-                    </Rectangle.Fill>
-                </Rectangle>
-                <Rectangle x:Name="rectangle7" Fill="Black" HorizontalAlignment="Left" Height="15" Margin="0,284,0,0" VerticalAlignment="Top" Width="592"/>
+                <Rectangle x:Name="rectangle7" Fill="Black" HorizontalAlignment="Left" Height="15" Margin="0,284,0,0" VerticalAlignment="Top" Width="600"/>
+                <UniformGrid x:Name="uniformGrid" Margin="10,399,-1507.045,127" RenderTransformOrigin="0.5,0.5" Opacity="0.655">
+                	<UniformGrid.RenderTransform>
+                		<TransformGroup>
+                			<ScaleTransform/>
+                			<SkewTransform/>
+                			<RotateTransform/>
+                			<TranslateTransform/>
+                		</TransformGroup>
+                	</UniformGrid.RenderTransform>
+                	<Image x:Name="image3_Copy" Margin="1857.045,0,-1398.03,-102.667" Source="calgaryCulture.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                		<Image.RenderTransform>
+                			<TransformGroup>
+                				<ScaleTransform/>
+                				<SkewTransform/>
+                				<RotateTransform/>
+                				<TranslateTransform/>
+                			</TransformGroup>
+                		</Image.RenderTransform>
+                		<Image.Effect>
+                			<DropShadowEffect BlurRadius="46"/>
+                		</Image.Effect>
+                	</Image>
+                	<Image x:Name="image1" Source="pack://siteoforigin:,,,/south-america1.jpg" Stretch="Fill" Opacity="0.995" RenderTransformOrigin="0.5,0.5" Margin="-699.015,0,1166.03,-102.667">
+                		<Image.Effect>
+                			<DropShadowEffect BlurRadius="46" ShadowDepth="8"/>
+                		</Image.Effect>
+                		<Image.RenderTransform>
+                			<TransformGroup>
+                				<ScaleTransform/>
+                				<SkewTransform/>
+                				<RotateTransform/>
+                				<TranslateTransform/>
+                			</TransformGroup>
+                		</Image.RenderTransform>
+                	</Image>
+                	<Image x:Name="image2" Source="soccer.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="-1142.03,0,1601.045,-102.667">
+                		<Image.Effect>
+                			<DropShadowEffect BlurRadius="45" Direction="467" ShadowDepth="8"/>
+                		</Image.Effect>
+                		<Image.RenderTransform>
+                			<TransformGroup>
+                				<ScaleTransform/>
+                				<SkewTransform/>
+                				<RotateTransform/>
+                				<TranslateTransform/>
+                			</TransformGroup>
+                		</Image.RenderTransform>
+                	</Image>
+                	<Image x:Name="image3" Source="calgaryCulture.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="519.134,-51.333,-60.119,-51.333">
+                		<Image.Effect>
+                			<DropShadowEffect BlurRadius="46"/>
+                		</Image.Effect>
+                		<Image.RenderTransform>
+                			<TransformGroup>
+                				<ScaleTransform/>
+                				<SkewTransform/>
+                				<RotateTransform/>
+                				<TranslateTransform/>
+                			</TransformGroup>
+                		</Image.RenderTransform>
+                	</Image>
+                	<Image x:Name="image4" Source="calgaryHeadModel.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="90.119,-51.333,368.896,-51.333">
+                		<Image.Effect>
+                			<DropShadowEffect BlurRadius="46"/>
+                		</Image.Effect>
+                		<Image.RenderTransform>
+                			<TransformGroup>
+                				<ScaleTransform/>
+                				<SkewTransform/>
+                				<RotateTransform/>
+                				<TranslateTransform/>
+                			</TransformGroup>
+                		</Image.RenderTransform>
+                	</Image>
+                	<Image x:Name="image5" Source="pack://siteoforigin:,,,/calgaryBridge.JPG" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="-336.53,-51.333,795.545,-51.333">
+                		<Image.Effect>
+                			<DropShadowEffect/>
+                		</Image.Effect>
+                		<Image.RenderTransform>
+                			<TransformGroup>
+                				<ScaleTransform/>
+                				<SkewTransform/>
+                				<RotateTransform/>
+                				<TranslateTransform/>
+                			</TransformGroup>
+                		</Image.RenderTransform>
+                	</Image>
+                	<Image x:Name="image2_Copy" Source="soccer.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="1593.5,-102.667,-1134.485,0">
+                		<Image.Effect>
+                			<DropShadowEffect BlurRadius="45" Direction="467" ShadowDepth="8"/>
+                		</Image.Effect>
+                		<Image.RenderTransform>
+                			<TransformGroup>
+                				<ScaleTransform/>
+                				<SkewTransform/>
+                				<RotateTransform/>
+                				<TranslateTransform/>
+                			</TransformGroup>
+                		</Image.RenderTransform>
+                	</Image>
+                	<Image x:Name="image1_Copy" Source="pack://siteoforigin:,,,/south-america1.jpg" Stretch="Fill" Opacity="0.995" RenderTransformOrigin="0.5,0.5" Margin="635.485,-102.667,-168.47,0">
+                		<Image.Effect>
+                			<DropShadowEffect BlurRadius="46" ShadowDepth="8"/>
+                		</Image.Effect>
+                		<Image.RenderTransform>
+                			<TransformGroup>
+                				<ScaleTransform/>
+                				<SkewTransform/>
+                				<RotateTransform/>
+                				<TranslateTransform/>
+                			</TransformGroup>
+                		</Image.RenderTransform>
+                	</Image>
+                </UniformGrid>
             </Grid>
         </StackPanel>
         <Image Height="100"/>
