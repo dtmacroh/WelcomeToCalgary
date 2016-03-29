@@ -28,8 +28,12 @@ namespace WelcomeToCalgary
             mainScroll = scroll;
 
         }
-
-       /* private void ButtArea_Click(object sender, RoutedEventArgs e)
+ 	
+		
+       /* Old code for Horizontal Version of prototype; please ignore
+		
+		
+		private void ButtArea_Click(object sender, RoutedEventArgs e)
         {
             EventAreaSelect area = new EventAreaSelect(mainScroll);
             mainScroll.Children.Clear();
