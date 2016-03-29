@@ -221,16 +221,23 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="calgaryBridge.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="south-america1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="calgaryHeadModel.jpg" />
     <Resource Include="chnw_186_large4presentations.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -266,6 +273,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="slide3.jpg" />
+    <Resource Include="soccer.jpg" />
     <Resource Include="SoccerCentre.jpg" />
   </ItemGroup>
   <ItemGroup>
