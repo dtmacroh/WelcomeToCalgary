@@ -263,6 +263,7 @@
     <Resource Include="JackSingerCropped.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="mapCalgary.png" />
     <Resource Include="PIPcropped.jpg" />
   </ItemGroup>
   <ItemGroup>
