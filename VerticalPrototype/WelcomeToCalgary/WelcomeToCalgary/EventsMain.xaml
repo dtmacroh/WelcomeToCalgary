@@ -94,13 +94,13 @@
         	<BeginStoryboard x:Name="CultureFilterClicked_BeginStoryboard" Storyboard="{StaticResource CultureFilterClicked}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="CultureCloseButton">
-            <BeginStoryboard Storyboard="{StaticResource CultureCloseClicked}"/>
+            <BeginStoryboard x:Name="CultureCloseClicked_BeginStoryboard" Storyboard="{StaticResource CultureCloseClicked}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AgeCloseButton">
             <BeginStoryboard x:Name="AgeCloseClicked_BeginStoryboard" Storyboard="{StaticResource AgeCloseClicked}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AreaFilterCloseButton1">
-            <BeginStoryboard Storyboard="{StaticResource AreaCloseClicked}"/>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AreaFilterCloseButton">
+            <BeginStoryboard x:Name="AreaCloseClicked_BeginStoryboard" Storyboard="{StaticResource AreaCloseClicked}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AreaFilter">
             <BeginStoryboard x:Name="AreaFilterClicked_BeginStoryboard1" Storyboard="{StaticResource FiltersClear}"/>
@@ -112,6 +112,15 @@
         </EventTrigger>
     	<EventTrigger RoutedEvent="ToggleButton.Checked" SourceName="FreeFilter">
     		<BeginStoryboard x:Name="FiltersClear_BeginStoryboard1" Storyboard="{StaticResource FiltersClear}"/>
+    	</EventTrigger>
+    	<EventTrigger RoutedEvent="ButtonBase.Click" SourceName="CultureApplyFilter">
+    		<BeginStoryboard x:Name="CultureCloseClicked_BeginStoryboard1" Storyboard="{StaticResource CultureCloseClicked}"/>
+    	</EventTrigger>
+    	<EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AreaApplyFilter">
+    		<BeginStoryboard x:Name="AreaCloseClicked_BeginStoryboard1" Storyboard="{StaticResource AreaCloseClicked}"/>
+    	</EventTrigger>
+    	<EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AgeApplyFilter">
+    		<BeginStoryboard x:Name="AgeCloseClicked_BeginStoryboard1" Storyboard="{StaticResource AgeCloseClicked}"/>
     	</EventTrigger>
     </UserControl.Triggers>
 	<Grid x:Name="grid" HorizontalAlignment="Left" VerticalAlignment="Top" Height="680" Width="600" Opacity="0.98">
@@ -129,9 +138,9 @@
 		<Image Margin="172,0,0,471" Source="Events_Calcrop.jpg" Stretch="Fill"/>
 		<TextBlock x:Name="EventsBlock" HorizontalAlignment="Left" Height="138.5" Margin="253,122.673,-38.5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385.5" FontSize="80" FontFamily="Segoe WP Black" TextAlignment="Center" Foreground="#FFC53131" Grid.ColumnSpan="2"><Run Foreground="White" Text="Events"/></TextBlock>
 		<Grid x:Name="AreaFilterPopup" HorizontalAlignment="Left" Height="465.116" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="400.5" Background="#FFF4F4F5" Visibility="Hidden">
-			<TextBlock x:Name="AreaFilterTitle1" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Area..."/></TextBlock>
-			<Button x:Name="AreaApplyFilter1" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="292.797,430.5,0,0" VerticalAlignment="Top" Width="79.703"/>
-			<Button x:Name="AreaFilterCloseButton1" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="358.5,7,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
+			<TextBlock x:Name="AreaFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Area..."/></TextBlock>
+			<Button x:Name="AreaApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="292.797,430.5,0,0" VerticalAlignment="Top" Width="79.703"/>
+			<Button x:Name="AreaFilterCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="358.5,7,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
 			<Image Margin="59.5,40.159,28,53.5" Source="mapCalgary.png" Stretch="Fill"/>
 			<Button x:Name="buttNE_click" HorizontalAlignment="Left" Height="197.833" Margin="253.415,46.5,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="108.085" Click="filterArea_NE_Click" Background="{x:Null}" Opacity="0">
 				<Button.Resources>
