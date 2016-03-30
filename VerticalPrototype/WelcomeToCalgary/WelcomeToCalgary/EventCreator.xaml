@@ -5,12 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" Height="279.104" Width="334.867">
     <Grid Margin="0,0,0,10">
-        <TextBox Name="EventsDetails" HorizontalAlignment="Left" Height="108" Margin="27,120,0,0" TextWrapping="Wrap" Text="Details" VerticalAlignment="Top" Width="286" TextAlignment="Center" FontSize="14" Background="#FF272729" BorderBrush="White" Foreground="White" SelectionBrush="#FF45BED1"/>
+        <TextBox Name="EventsDetails" HorizontalAlignment="Left" Height="auto" Margin="27,151,0,0" TextWrapping="Wrap" Text="Details" VerticalAlignment="Top" Width="286" TextAlignment="Center" FontSize="14" Background="#FF272729" BorderBrush="White" Foreground="White" SelectionBrush="#FF45BED1"/>
         <TextBlock Name="EventTitle" HorizontalAlignment="Left" Margin="0,26,-16,0" TextWrapping="Wrap" Text="Title " VerticalAlignment="Top" Height="29" Width="351" TextAlignment="Center" TextDecorations="Underline" FontWeight="Bold" FontSize="20" FontFamily="Segoe WP Black" RenderTransformOrigin="0.248,0.552" Foreground="WhiteSmoke"/>
         <Image Name="EventImage" HorizontalAlignment="Left" Height="150" Margin="-183,82,0,0" VerticalAlignment="Top" Width="131" />
-        <TextBlock Name="EventDate" HorizontalAlignment="Left" Margin="49,59,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" RenderTransformOrigin="0.12,0.5" TextAlignment="Center" Foreground="White" Width="242"/>
+        <TextBlock Name="EventDate" HorizontalAlignment="Center" Margin="0,59,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" RenderTransformOrigin="0.12,0.5" TextAlignment="Center" Foreground="White" Width="auto"/>
         <TextBlock Name="EventLocation" HorizontalAlignment="Left" Margin="27,79,0,0" TextWrapping="Wrap" Text="Location" VerticalAlignment="Top" Foreground="White" Width="286" TextAlignment="Center" Height="33"/>
-        <TextBlock Name="EventWebsite" HorizontalAlignment="Left" Margin="25,237,0,0" TextWrapping="Wrap" Text="Website" VerticalAlignment="Top" Foreground="White" Width="286" TextAlignment="Center"/>
+        <TextBlock Name="EventWebsite" HorizontalAlignment="Left" Margin="27,112,0,0" TextWrapping="Wrap" Text="Website" VerticalAlignment="Top" Foreground="White" Width="286" TextAlignment="Center"/>
 
     </Grid>
 </UserControl>
