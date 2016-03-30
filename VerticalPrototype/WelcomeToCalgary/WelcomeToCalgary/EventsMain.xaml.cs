@@ -142,6 +142,7 @@ namespace WelcomeToCalgary
 
                     this.EventsHolder.Children.Add(Event);
                 }
+               
             }
             else if (CultureEU.IsSelected) //Europe
             {

@@ -242,7 +242,7 @@
                 </Button.Resources>
             </Button>
         </Grid>
-        <Grid x:Name="CultureFilterPopup" HorizontalAlignment="Left" Height="238" Margin="176,3,0,0" VerticalAlignment="Top" Width="257" Background="#FFF4F4F5" Visibility="Hidden">
+        <Grid x:Name="CultureFilterPopup" HorizontalAlignment="Left" Height="238" Margin="172,44,0,0" VerticalAlignment="Top" Width="258" Background="#FFF4F4F5" Visibility="Hidden">
             <TextBlock x:Name="CultureFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Culture..."/></TextBlock>
             <ListBox x:Name="CultureFilterOptions" HorizontalAlignment="Center" Height="142.5" Margin="0,56,0,0" VerticalAlignment="Top" Width="198">
                 <ListBoxItem x:Name="CultureSA" Content="South American" IsSelected="True"/>
