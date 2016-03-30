@@ -14,7 +14,7 @@
 		<Storyboard x:Key="fadeinMenu">
 			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="HomepageGrid">
 				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.995"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.995"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
