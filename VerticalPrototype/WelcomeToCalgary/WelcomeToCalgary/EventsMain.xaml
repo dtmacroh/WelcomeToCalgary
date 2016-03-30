@@ -137,6 +137,9 @@
         <Rectangle x:Name="FilterBackgroundRectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="680" Stroke="Black" VerticalAlignment="Top" Width="171.5"/>
         <Image Margin="172,0,0,471" Source="Events_Calcrop.jpg" Stretch="Fill"/>
         <TextBlock x:Name="EventsBlock" HorizontalAlignment="Left" Height="138.5" Margin="253,122.673,-38.5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385.5" FontSize="80" FontFamily="Segoe WP Black" TextAlignment="Center" Foreground="#FFC53131" Grid.ColumnSpan="2"><Run Foreground="White" Text="Events"/></TextBlock>
+        <ScrollViewer x:Name="ScrollEvents" HorizontalAlignment="Left" Height="auto" Margin="200,244,0,0" VerticalAlignment="Top" Width="358">
+            <StackPanel x:Name="EventsHolder" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Top" Width="auto"/>
+        </ScrollViewer>
         <Grid x:Name="AreaFilterPopup" HorizontalAlignment="Left" Height="465.116" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="400.5" Background="#FFF4F4F5" Visibility="Hidden">
             <TextBlock x:Name="AreaFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Area..."/></TextBlock>
             <Button x:Name="AreaApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="292.797,430.5,0,0" VerticalAlignment="Top" Width="79.703"/>
@@ -268,9 +271,6 @@
             <Button x:Name="AgeApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="157.402,203.5,0,0" VerticalAlignment="Top" Width="79.703"/>
             <Button x:Name="AgeCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="213,5,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
         </Grid>
-        <ScrollViewer x:Name="ScrollEvents" HorizontalAlignment="Left" Height="auto" Margin="200,244,0,0" VerticalAlignment="Top" Width="358">
-            <StackPanel x:Name="EventsHolder" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Top" Width="auto"/>
-        </ScrollViewer>
 
     </Grid>
 </UserControl>
