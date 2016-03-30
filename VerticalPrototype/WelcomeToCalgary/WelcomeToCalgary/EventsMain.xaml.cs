@@ -214,20 +214,20 @@ namespace WelcomeToCalgary
                         Event.Details = "Fiestaval is a free and family-oriented, multicultural arts and entertainment festival highlighting the Latin American Culture." +
                                         " It will take place in the heart of downtown Calgary at the Calgary Olympic Plaza on July 22, 23 and 24 2016." +
                                          "It is an opportunity to support Calgary’s Latin community while encouraging multiculturalism among all Calgarians.";
-                        Event.Location = "Location: North Glenmore Park \nAddress: 7305 Crowchild Tr. SW, Calgary, AB";
-                        Event.Website = "Website: http://www.chinatowncalgary.com/dragonboat/index.html";
+                        Event.Location = "Location: Calgary Olympic Plaza \nAddress: 228 8 Ave SE, Calgary, AB T2P 2M5";
+                        Event.Website = "Website: http://fiestaval.ca/calgary/";
                     }
                     else
                     {
-                        Event.Title = "Japanese Festival “Omatsuri”";
-                        Event.Date = "Date : August 13, 2016";
+                        Event.Title = "Brazilian Heat";
+                        Event.Date = "Date : August 22, 2016";
                         Event.Details = "Now in its sixth year, the Calgary Japanese Festival “Omatsuri” will once again be held at the Bowness Community Centre. Adults and children of all ages are invited to join us on Saturday, August 13, 2016 from 11:00 am to 6:00 pm to" +
                                           "help us celebrate Japan, its people, and the Japanese Canadian populations of Calgary and around the country." +
                                          " “Omatsuri” is the Japanese term for a “traditional festival”. Visitors to the festival will be treated to authentic Japanese customs, presentations of traditional music, dance & song, martial arts demonstrations, and more! " +
                                          "There will be games and bouncy houses for the kids, galleries of local Japanese arts and crafts as well as several food kiosks featuring traditional Japanese cuisine. Don’t miss out on our fabulous sake tasting as well as our beer gardens! " +
                                          "We hope you will join us on August 13 to support the members of the Japanese Canadian Community as we celebrate our heritage, culture and traditions.";
                         Event.Location = "Location: Bowness Community Centre \nAddress: 7904 - 43rd Avenue NW Calgary, AB T3B 4B9";
-                        Event.Website = "Website: http://calgaryjapanesefestival.com";
+                        Event.Website = "Website: http://www.avenuecalgary.com/Calendar/index.php/name/Brazilian-Heat/event/8894/";
                     }
 
                     this.EventsHolder.Children.Add(Event);
