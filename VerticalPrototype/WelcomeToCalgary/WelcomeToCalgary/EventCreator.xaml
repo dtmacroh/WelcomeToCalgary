@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" Height="279.104" Width="426.867">
-    <Grid Background="#FF606163" Margin="0,0,10,10">
-        <TextBox Name="EventsDetails" HorizontalAlignment="Left" Height="102" Margin="28,97,0,0" TextWrapping="Wrap" Text="Details" VerticalAlignment="Top" Width="351" TextAlignment="Center" FontSize="16"/>
-        <TextBlock Name="EventTitle" HorizontalAlignment="Left" Margin="28,40,0,0" TextWrapping="Wrap" Text="Title " VerticalAlignment="Top" Height="29" Width="351" TextAlignment="Center" TextDecorations="Underline" FontWeight="Bold" FontSize="20" FontFamily="Segoe WP Black"/>
+             mc:Ignorable="d" Height="279.104" Width="334.867">
+    <Grid Background="#FF606163" Margin="0,0,0,10">
+        <TextBox Name="EventsDetails" HorizontalAlignment="Left" Height="102" Margin="10,98,0,0" TextWrapping="Wrap" Text="Details" VerticalAlignment="Top" Width="315" TextAlignment="Center" FontSize="16"/>
+        <TextBlock Name="EventTitle" HorizontalAlignment="Left" Margin="0,40,-16,0" TextWrapping="Wrap" Text="Title " VerticalAlignment="Top" Height="29" Width="351" TextAlignment="Center" TextDecorations="Underline" FontWeight="Bold" FontSize="20" FontFamily="Segoe WP Black" RenderTransformOrigin="0.248,0.552"/>
 
     </Grid>
 </UserControl>

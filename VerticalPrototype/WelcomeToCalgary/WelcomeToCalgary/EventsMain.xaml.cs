@@ -27,6 +27,8 @@ namespace WelcomeToCalgary
         {
             InitializeComponent();
             mainScroll = scroll;
+            AreaFilterPopup.Visibility = Visibility.Hidden;
+
 
         }
 
@@ -109,8 +111,11 @@ namespace WelcomeToCalgary
 
             private void FilterApplied(object sender, RoutedEventArgs e)
           {
+              CultureFilterPopup.Visibility = Visibility.Hidden;
+              //CultureFilterPopup.Opacity = 0;
             if (CultureAS.IsSelected) //Asian
             {
+
                 for (int i = 0; i < 2; i++)
                 {
                     EventCreator Event = new EventCreator();
@@ -133,14 +138,17 @@ namespace WelcomeToCalgary
             }
             else if (CultureEU.IsSelected) //Europe
             {
+                CultureFilterPopup.Visibility = Visibility.Hidden;
                 EventsBlock.Text = "woof";
             }
             else if (CultureAF.IsSelected) //Africa
             {
+                CultureFilterPopup.Visibility = Visibility.Hidden;
                 EventsBlock.Text = "moo";
             }
             else if (CultureSA.IsSelected) //South America
             {
+                CultureFilterPopup.Visibility = Visibility.Hidden;
                 EventsBlock.Text = "oink";
             }
 
