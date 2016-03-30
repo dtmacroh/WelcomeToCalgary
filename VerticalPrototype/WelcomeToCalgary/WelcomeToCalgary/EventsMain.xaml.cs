@@ -91,22 +91,62 @@ namespace WelcomeToCalgary
 			
 		}
 
-		private void filterArea_NW_Click(object sender, System.Windows.RoutedEventArgs e)
-		{
-			if (oneRegSelect == "NW")
-			{
-				buttNW_click.Opacity =0;
-				oneRegSelect = "";
-			}
-			else
-			{
-				buttNW_click.Content = "NW selected";
-				clearAreaButtOpac();
-				buttNW_click.Opacity=80;
-				oneRegSelect = "NW";
-			}
+        private void filterArea_NW_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (oneRegSelect == "NW")
+            {
+                buttNW_click.Opacity = 0;
+                oneRegSelect = "";
+            }
+            else
+            {
+                buttNW_click.Content = "NW selected";
+                clearAreaButtOpac();
+                buttNW_click.Opacity = 80;
+                oneRegSelect = "NW";
+            }
+        }
+
+            private void FilterApplied(object sender, RoutedEventArgs e)
+          {
+            if (CultureAS.IsSelected) //Asian
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    EventCreator Event = new EventCreator();
+               
+                    if (i == 0)
+                    {
+                        Event.Title = "Fandango";
+                        Event.Details = "Attend a lesson with a partner and experience a famous dance of Spain." +
+                         "\n" + "Date & Time: March 28, 2016" + "\n" + "Location: Hudson Community Centre, Brentwood";
+                    }
+                    else
+                    {
+                        Event.Title = "Feast for the Beast";
+                        Event.Details = "Feast on the delicious food offered by local food trucks with your tradition spain cuisine.\n" +
+                                            "Date & Time:  May 22, 2016 @ 12PM" + "\n" + "Location: 12th Langdon Ave, Downtown";
+                    }
+
+                    this.EventsHolder.Children.Add(Event);
+                }
+            }
+            else if (CultureEU.IsSelected) //Europe
+            {
+                EventsBlock.Text = "woof";
+            }
+            else if (CultureAF.IsSelected) //Africa
+            {
+                EventsBlock.Text = "moo";
+            }
+            else if (CultureSA.IsSelected) //South America
+            {
+                EventsBlock.Text = "oink";
+            }
+
+        }
 			// TODO: Add event handler implementation here.
-		}
+		
  	
 	
        /* Old code for Horizontal Version of prototype; please ignore
