@@ -108,7 +108,7 @@ namespace WelcomeToCalgary
             }
         }
 
-            private void FilterApplied(object sender, RoutedEventArgs e)
+            private void CultureFilterApplied(object sender, RoutedEventArgs e)
           {
               this.EventsHolder.Children.Clear();
 

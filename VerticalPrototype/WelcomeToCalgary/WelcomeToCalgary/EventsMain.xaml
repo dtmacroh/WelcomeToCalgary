@@ -247,7 +247,7 @@
 				<ListBoxItem x:Name="CultureAS" Content="Asian" IsSelected="True"/>
 				<ListBoxItem x:Name="CultureAF" Content="African" IsSelected="True"/>
 			</ListBox>
-			<Button x:Name="CultureApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="157.402,203.5,0,0" VerticalAlignment="Top" Width="79.703" Click="FilterApplied"/>
+            <Button x:Name="CultureApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="157.402,203.5,0,0" VerticalAlignment="Top" Width="79.703" Click="CultureFilterApplied"/>
 			<Button x:Name="CultureCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="213,5,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
 		</Grid>
 		<Grid x:Name="EventsFilterPanel" HorizontalAlignment="Left" Height="680" VerticalAlignment="Top" Width="171.5">
