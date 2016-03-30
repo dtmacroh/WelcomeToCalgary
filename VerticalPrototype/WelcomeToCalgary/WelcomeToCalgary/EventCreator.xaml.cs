@@ -43,6 +43,49 @@ namespace WelcomeToCalgary
             }
         }
 
+        public string date;
+        public string Date
+        {
+            get { return date; }
+            set
+            {
+                date = value;
+                this.EventDate.Text = this.date;
+            }
+        }
+
+        public string location;
+        public string Location
+        {
+            get { return location; }
+            set
+            {
+                location = value;
+                this.EventLocation.Text = this.location;
+            }
+        }
+        public string website;
+        public string Website
+        {
+            get { return website; }
+            set
+            {
+                website = value;
+                this.EventWebsite.Text = this.website;
+            }
+        }
+
+        public ImageSource image;
+        public ImageSource Image
+        {
+            get { return image; }
+            set
+            {
+                image = value;
+                this.EventImage.Source = this.image;
+            }
+        }
+
         public EventCreator()
         {
             InitializeComponent();
