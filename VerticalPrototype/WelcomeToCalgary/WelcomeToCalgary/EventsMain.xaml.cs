@@ -187,7 +187,8 @@ namespace WelcomeToCalgary
 
             private void CultureFilterApplied(object sender, RoutedEventArgs e)
           {
-              this.EventsHolder.Children.Clear();
+            this.EventsHolder.Children.Clear();
+			this.ScrollEvents.ScrollToTop();
 
             if (CultureAS.IsSelected) //Asian
             {
@@ -314,6 +315,7 @@ namespace WelcomeToCalgary
             private void AgeFilterApplied(object sender, RoutedEventArgs e)
             {
                 this.EventsHolder.Children.Clear();
+				this.ScrollEvents.ScrollToTop();
 
                 if (AgeKid.IsSelected)
                 {
@@ -437,6 +439,7 @@ namespace WelcomeToCalgary
             private void AreaFilterApplied(object sender, RoutedEventArgs e)
             {
                 this.EventsHolder.Children.Clear();
+				this.ScrollEvents.ScrollToTop();
 
                 if (oneRegSelect == "NE")
                 {
