@@ -142,7 +142,7 @@
         </ScrollViewer>
         <Grid x:Name="AreaFilterPopup" HorizontalAlignment="Left" Height="465.116" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="400.5" Background="#FFF4F4F5" Visibility="Hidden">
             <TextBlock x:Name="AreaFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Area..."/></TextBlock>
-            <Button x:Name="AreaApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="292.797,430.5,0,0" VerticalAlignment="Top" Width="79.703"/>
+            <Button x:Name="AreaApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="292.797,430.5,0,0" VerticalAlignment="Top" Width="79.703" Click="AreaFilterApplied"/>
             <Button x:Name="AreaFilterCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="358.5,7,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
             <Image Margin="59.5,40.159,28,53.5" Source="mapCalgary.png" Stretch="Fill"/>
             <Button x:Name="buttNE_click" HorizontalAlignment="Left" Height="197.833" Margin="253.415,46.5,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="108.085" Click="filterArea_NE_Click" Background="{x:Null}" Opacity="0">
@@ -263,12 +263,12 @@
         <Grid x:Name="AgeFilterPopup" HorizontalAlignment="Left" Height="238.115" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="256.5" Background="#FFF4F4F5" Visibility="Hidden">
             <TextBlock x:Name="AgeFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Age..."/></TextBlock>
             <ListBox x:Name="AgeFilterOptions" HorizontalAlignment="Center" Height="142.5" Margin="0,56,0,0" VerticalAlignment="Top" Width="198">
-                <ListBoxItem x:Name="AgeKid" Content="Children"/>
-                <ListBoxItem x:Name="AgeTeen" Content="Teen and Young Adult"/>
-                <ListBoxItem x:Name="AgeAdult" Content="Adult"/>
-                <ListBoxItem x:Name="AgeSenior" Content="Senior"/>
+                <ListBoxItem x:Name="AgeKid" Content="Children" IsSelected="True"/>
+                <ListBoxItem x:Name="AgeTeen" Content="Teen and Young Adult" IsSelected="True"/>
+                <ListBoxItem x:Name="AgeAdult" Content="Adult" IsSelected="True"/>
+                <ListBoxItem x:Name="AgeSenior" Content="Senior" IsSelected="True"/>
             </ListBox>
-            <Button x:Name="AgeApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="157.402,203.5,0,0" VerticalAlignment="Top" Width="79.703"/>
+            <Button x:Name="AgeApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="157.402,203.5,0,0" VerticalAlignment="Top" Width="79.703" Click="AgeFilterApplied"/>
             <Button x:Name="AgeCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="213,5,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
         </Grid>
 
