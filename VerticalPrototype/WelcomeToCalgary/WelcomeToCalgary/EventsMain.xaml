@@ -79,13 +79,6 @@
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="AgeFilterPopup">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ToggleButton.IsChecked)" Storyboard.TargetName="FreeFilter">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <System:Boolean>False</System:Boolean>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="EventsPageLoad">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid">
@@ -100,12 +93,12 @@
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ScrollEvents">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="EventsLoadAfterFilter">
         	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ScrollEvents">
-        		<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
         	</DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </UserControl.Resources>
@@ -130,9 +123,6 @@
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AgeFilter">
             <BeginStoryboard x:Name="FiltersClear_BeginStoryboard2" Storyboard="{StaticResource FiltersClear}"/>
             <BeginStoryboard x:Name="AgeFilterClicked_BeginStoryboard" Storyboard="{StaticResource AgeFilterClicked}"/>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="ToggleButton.Checked" SourceName="FreeFilter">
-            <BeginStoryboard x:Name="FiltersClear_BeginStoryboard1" Storyboard="{StaticResource FiltersClear}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="CultureApplyFilter">
             <BeginStoryboard x:Name="CultureCloseClicked_BeginStoryboard1" Storyboard="{StaticResource CultureCloseClicked}"/>
@@ -235,7 +225,7 @@
                 </Button.Resources>
                 <Path Data="M2.632,121.054 C2.6116745,118.91982 3.137098,116.3142 2.132,114.304 2.2153333,114.22067 2.2986667,114.13733 2.382,114.054 2.2117213,113.97832 2.0331661,113.91295 1.882,113.804 1.7863942,113.73509 1.7153333,113.63733 1.632,113.554 1.5486667,113.63733 1.4653333,113.72067 1.382,113.804 0.93865939,113.36066 0.68009933,113.13286 0.132,112.804 0.21533333,112.72067 0.29866667,112.63733 0.382,112.554 -0.16304705,111.46391 0.34078291,110.09791&#xA;0.132,109.054 0.21533333,108.97067 0.29866667,108.88733 0.382,108.804 -0.37271649,105.78513 1.3829733,101.05789 0.632,98.054 0.71533333,97.970667 0.79866667,97.887333 0.882,97.804 -1.2134584,95.708542 2.3817467,86.678367 1.132,83.554 1.4663587,82.216565 1.6567523,80.293138 1.882,78.804" Fill="#FFF4F4F5" Height="43.25" Stretch="Fill" Stroke="Black" Width="3.633"/>
             </Button>
-            <Button x:Name="buttSW_click" Content="SW Selected" HorizontalAlignment="Left" Height="224.564" Margin="67.191,148.75,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="192.642" Opacity="0" Click="filterArea_SW_click" IsDefault="True">
+            <Button x:Name="buttSW_click" Content="SW Selected&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Height="224.564" Margin="67.191,148.75,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="192.642" Click="filterArea_SW_click" IsDefault="True" Opacity="0">
                 <Button.Resources>
                     <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -300,7 +290,7 @@
             <Button x:Name="AreaFilter" Content="By Area" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="0,50,0,0" BorderThickness="0" Background="#FFF4F4F5"/>
             <Button x:Name="CultureFilter" Content="By Culture" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,100,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
             <Button x:Name="AgeFilter" Content="By Age" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,150,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
-            <CheckBox x:Name="FreeFilter" Content="Show Only&#xA;Free Events" HorizontalAlignment="Left" Height="33.92" Margin="38.339,192.937,0,0" VerticalAlignment="Top" Width="96.027"/>
+            <CheckBox x:Name="FreeEvents" Content="Show Only&#xA;Free Events" HorizontalAlignment="Left" Margin="43.358,199,0,0" VerticalAlignment="Top" Checked="FreeFilterApplied" />
         </Grid>
         <Grid x:Name="AgeFilterPopup" HorizontalAlignment="Left" Height="238.115" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="256.5" Background="#FFF4F4F5" Visibility="Hidden">
             <TextBlock x:Name="AgeFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Age..."/></TextBlock>

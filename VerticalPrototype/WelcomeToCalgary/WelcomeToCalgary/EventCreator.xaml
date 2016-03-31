@@ -3,19 +3,168 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" Height="auto" Width="334.867">
-    <Grid Margin="0,0,0,10" Height="auto">
+             mc:Ignorable="d" Height="auto" Width="334.867" MinHeight="200" d:DesignHeight="237.05">
+	<UserControl.Resources>
+		<Storyboard x:Key="printSelected">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle">
+				<EasingDoubleKeyFrame KeyTime="0" Value="9"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="printPanel">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="printPanel">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="donePrint">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:5.3" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:5.6" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle1">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.99"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle2">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle3">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle4">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle5">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle6">
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:4.4" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle7">
+				<EasingDoubleKeyFrame KeyTime="0:0:3.6" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="statusBar">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0.995"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle2">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:0.6" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle3">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:1.2" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle4">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle5">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:2.5" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle6">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle7">
+				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="0:0:3.6" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="printing">
+				<EasingDoubleKeyFrame KeyTime="0:0:5.1" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:5.6" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="donePrint">
+				<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:5.3" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:5.6" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="ClosePrint">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="printPanel">
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+	<UserControl.Triggers>
+		<EventTrigger RoutedEvent="ButtonBase.Click" SourceName="PrintEvent">
+			<BeginStoryboard Storyboard="{StaticResource printSelected}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="ButtonBase.Click" SourceName="button">
+			<BeginStoryboard x:Name="ClosePrint_BeginStoryboard" Storyboard="{StaticResource ClosePrint}"/>
+		</EventTrigger>
+	</UserControl.Triggers>
+	
+    <Grid Margin="0,0,0,10" Height="auto" MinHeight="250">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-
+			
         </Grid.RowDefinitions>
-        <TextBox Name="EventsDetails" HorizontalAlignment="Left" Height="auto" Margin="24,176,0,0" TextWrapping="Wrap" Text="Details" VerticalAlignment="Top" Width="286" TextAlignment="Center" FontSize="14" Background="#FF272729" BorderBrush="White" Foreground="White" SelectionBrush="#FF45BED1" Focusable="False"/>
-        <TextBlock Name="EventTitle" HorizontalAlignment="Left" Margin="7,25,0,0" TextWrapping="Wrap" Text="Title " VerticalAlignment="Top" Height="29" Width="318" TextAlignment="Center" TextDecorations="Underline" FontWeight="Bold" FontSize="20" FontFamily="Segoe WP Black" RenderTransformOrigin="0.248,0.552" Foreground="WhiteSmoke"/>
-        <Image Name="EventImage" HorizontalAlignment="Left" Height="150" Margin="-183,82,0,0" VerticalAlignment="Top" Width="131" />
-        <TextBlock Name="EventDate" HorizontalAlignment="Center" Margin="18,59,17,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" RenderTransformOrigin="0.12,0.5" TextAlignment="Center" Foreground="White" Width="300" Height="16"/>
-        <TextBlock Name="EventLocation" HorizontalAlignment="Center" Margin="24,79,25,0" TextWrapping="Wrap" Text="Location" VerticalAlignment="Top" Foreground="White" Width="286" TextAlignment="Center" Height="33"/>
-        <TextBlock Name="EventWebsite" HorizontalAlignment="Center" Margin="24,112,25,0" TextWrapping="Wrap" Text="Website" VerticalAlignment="Top" Foreground="White" Width="286" TextAlignment="Center" Height="16"/>
-        <Button Name="PrintEvent" Content="Print this Event" HorizontalAlignment="Center" Margin="84,143,73,0" VerticalAlignment="Top" Width="178" Height="22"/>
-
+        <TextBox x:Name="EventsDetails" HorizontalAlignment="Left" Height="auto" Margin="18.934,189.5,0,0" TextWrapping="Wrap" Text="Details" VerticalAlignment="Top" Width="286" TextAlignment="Center" FontSize="14" Background="#FF272729" BorderBrush="White" Foreground="White" SelectionBrush="#FF45BED1" Focusable="False"/>
+    	<TextBlock x:Name="EventTitle" HorizontalAlignment="Left" Margin="7,25,-0.133,0" TextWrapping="Wrap" Text="Title " VerticalAlignment="Top" Height="29" Width="318" TextAlignment="Center" TextDecorations="Underline" FontWeight="Bold" FontSize="20" FontFamily="Segoe WP Black" RenderTransformOrigin="0.248,0.552" Foreground="WhiteSmoke"/>
+    	<Image x:Name="EventImage" HorizontalAlignment="Left" Height="150" Margin="-183,82,0,0" VerticalAlignment="Top" Width="131" />
+    	<TextBlock x:Name="EventDate" HorizontalAlignment="Center" Margin="12.934,59,11.933,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" RenderTransformOrigin="0.12,0.5" TextAlignment="Center" Foreground="White" Width="300" Height="16"/>
+    	<TextBlock x:Name="EventLocation" HorizontalAlignment="Center" Margin="18.934,79,19.933,0" TextWrapping="Wrap" Text="Location" VerticalAlignment="Top" Foreground="White" Width="286" TextAlignment="Center" Height="33"/>
+    	<TextBlock x:Name="EventWebsite" HorizontalAlignment="Center" Margin="18.934,112,19.933,0" TextWrapping="Wrap" Text="Website" VerticalAlignment="Top" Foreground="White" Width="286" TextAlignment="Center" Height="16"/>
+    	<Button x:Name="PrintEvent" Content="Print this Event" HorizontalAlignment="Center" Margin="78.934,143,67.934,0" VerticalAlignment="Top" Width="177.999" Height="22" Click="PrintEvent_Click"/>
+    	<Grid x:Name="printPanel" Margin="0,-59.47,7.499,234.55" Visibility="Hidden">
+    		<Grid.ColumnDefinitions>
+    			<ColumnDefinition Width="218*"/>
+    			<ColumnDefinition Width="117*"/>
+    		</Grid.ColumnDefinitions>
+    		<Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="149.92" Margin="10,58.05,0,-10.5" Stroke="Black" VerticalAlignment="Top" Width="317.368" RenderTransformOrigin="0.5,0.5" StrokeThickness="0" Fill="#FFA49F9F" Grid.ColumnSpan="2" RadiusY="25.5" RadiusX="25.5">
+    			<Rectangle.RenderTransform>
+    				<TransformGroup>
+    					<ScaleTransform/>
+    					<SkewTransform/>
+    					<RotateTransform/>
+    					<TranslateTransform/>
+    				</TransformGroup>
+    			</Rectangle.RenderTransform>
+    		</Rectangle>
+    		<TextBlock x:Name="printing" HorizontalAlignment="Left" Margin="52.367,62.55,-26,0" TextWrapping="Wrap" Text="Printing selected event..." VerticalAlignment="Top" Width="301" Height="45.57" RenderTransformOrigin="0.5,0.5" FontSize="18.667" FontFamily="Segoe WP Black" Grid.ColumnSpan="2">
+    			<TextBlock.RenderTransform>
+    				<TransformGroup>
+    					<ScaleTransform/>
+    					<SkewTransform/>
+    					<RotateTransform/>
+    					<TranslateTransform/>
+    				</TransformGroup>
+    			</TextBlock.RenderTransform>
+    		</TextBlock>
+    		<TextBlock x:Name="donePrint" HorizontalAlignment="Left" Margin="102.5,147.55,0,0" TextWrapping="Wrap" Text="Printing Done!" VerticalAlignment="Top" Width="212.53" Height="38.46" RenderTransformOrigin="0.48,2.848" FontSize="18.667" FontFamily="Segoe WP Black" Grid.ColumnSpan="2">
+    			<TextBlock.RenderTransform>
+    				<TransformGroup>
+    					<ScaleTransform/>
+    					<SkewTransform/>
+    					<RotateTransform/>
+    					<TranslateTransform/>
+    				</TransformGroup>
+    			</TextBlock.RenderTransform>
+    		</TextBlock>
+    		<StatusBar x:Name="statusBar" HorizontalAlignment="Left" Height="47.38" Margin="41.5,92.17,0,0" VerticalAlignment="Top" Width="257.5" Background="#FF6A5E5E" Grid.ColumnSpan="2">
+    			<StatusBar.Effect>
+    				<BlurEffect Radius="1"/>
+    			</StatusBar.Effect>
+    			<Rectangle x:Name="rectangle1" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="8.633" RadiusX="8.633"/>
+    			<Rectangle x:Name="rectangle2" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="7.633" RadiusX="7.633"/>
+    			<Rectangle x:Name="rectangle3" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="8.133" RadiusX="8.133"/>
+    			<Rectangle x:Name="rectangle4" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="8.633" RadiusX="8.633"/>
+    			<Rectangle x:Name="rectangle5" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="9.133" RadiusX="9.133"/>
+    			<Rectangle x:Name="rectangle6" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="9.633" RadiusX="9.633"/>
+    			<Rectangle x:Name="rectangle7" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="10.133" RadiusX="10.133"/>
+    		</StatusBar>
+    		<Button x:Name="button" Content="OK!" HorizontalAlignment="Left" Margin="129.5,177.51,0,0" VerticalAlignment="Top" Width="75" />
+       
+    	</Grid>
+       
     </Grid>
 </UserControl>

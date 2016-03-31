@@ -161,7 +161,6 @@ namespace WelcomeToCalgary
 			}
 			else
 			{
-				buttSW_click.Content = "SW selected";
 				clearAreaButtOpac();
 				buttSW_click.Opacity=80;
 				oneRegSelect = "SW";
@@ -562,6 +561,43 @@ namespace WelcomeToCalgary
                     }
                 }
             }
-			// TODO: Add event handler implementation here.
+
+            private void FreeFilterApplied(object sender, System.Windows.RoutedEventArgs e)
+            {
+				 this.EventsHolder.Children.Clear();
+				this.ScrollEvents.ScrollToTop();
+            	for (int i = 0; i < 2; i++)
+                    {
+                        EventCreator Event = new EventCreator();
+
+                        if (i == 0)
+                        {
+                              Event.Title = "Walk to Fight Arthritis";
+                            Event.Date = "Date : June 5 , 2016";
+                            Event.Details = "The Walk to Fight Arthritis is the signature event of the Arthritis Society. It is a 1km or 5km fun-filled family event that unites "+
+                                            "communities in supporting the nearly 4.5 million Canadians living with Arthritis. The annual Walk will take place in 23 communities across Canada. "+
+                                            "The money raised throughout the Walk helps fun research, advocacy and solutions to improve the quality of life for those living with arthritis and their families."+
+                                            " To register as a participant or as a volunteer go online. ";
+                            Event.Location = "Location: Fish Creek Provincial Park  \nAddress: 15979 Bow Bottom Trail SE, Calgary, AB T2P 0Y8";
+                            Event.Website = "Website: http://walktofightarthritis.ca/";
+							
+                        }
+                        else
+                        {
+                            Event.Title = "Jayman BUILT MS Walk";
+                            Event.Date = "Date : Jun 12, 2016";
+                            Event.Details = "Join thousands of Calgarians for the 25th Annual Jayman BUILT MS Walk as we walk together to end MS. The Jayman BUILT MS Walk is more than a Walk, " +
+                                            "it’s a movement to end MS, and we need your help! Walk with us and 2000 of your closest friends on June 12, 2016 at Prince’s Island Park. Help us find a cure." +
+                                            " Help us bring hope to those living with MS. Every step matters.";
+                            Event.Location = "Location: Prince's Island Park  \nAddress: 698 Eau Claire Ave SW, Calgary, AB";
+                            Event.Website = "Website: http://mssoc.convio.net/site/TR?fr_id=4943&pg=entry";
+                        }
+
+                        this.EventsHolder.Children.Add(Event);
+						this.FreeEvents.IsChecked=false;
+                    }
+					
+            }
+			
     }
 }

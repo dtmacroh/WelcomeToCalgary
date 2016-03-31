@@ -20,6 +20,7 @@ namespace WelcomeToCalgary
     /// </summary>
     public partial class EventCreator : UserControl
     {
+		
         public string title;
         public string Title
         {
@@ -89,6 +90,12 @@ namespace WelcomeToCalgary
         public EventCreator()
         {
             InitializeComponent();
+        }
+
+        private void PrintEvent_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	
+			
         }
 
        
