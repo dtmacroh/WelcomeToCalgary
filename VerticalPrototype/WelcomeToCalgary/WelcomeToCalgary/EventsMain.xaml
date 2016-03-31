@@ -88,19 +88,24 @@
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="EventsPageLoad">
-        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid">
-        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
-        	</DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="EventsAppear">
-        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ScrollEvents">
-        		<DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="{x:Static Visibility.Visible}"/>
-        	</ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ScrollEvents">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ScrollEvents">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="EventsLoadAfterFilter">
         	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ScrollEvents">
-        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-        		<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
-        		<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
         	</DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </UserControl.Resources>
@@ -139,16 +144,17 @@
             <BeginStoryboard x:Name="AgeCloseClicked_BeginStoryboard1" Storyboard="{StaticResource AgeCloseClicked}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
-        	<BeginStoryboard Storyboard="{StaticResource EventsPageLoad}"/>
+            <BeginStoryboard Storyboard="{StaticResource EventsPageLoad}"/>
+            <BeginStoryboard x:Name="EventsAppear_BeginStoryboard3" Storyboard="{StaticResource EventsAppear}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AreaApplyFilter">
-        	<BeginStoryboard x:Name="EventsAppear_BeginStoryboard1" Storyboard="{StaticResource EventsAppear}"/>
+            <BeginStoryboard x:Name="EventsAppear_BeginStoryboard1" Storyboard="{StaticResource EventsAppear}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="CultureApplyFilter">
-        	<BeginStoryboard x:Name="EventsAppear_BeginStoryboard" Storyboard="{StaticResource EventsAppear}"/>
+            <BeginStoryboard x:Name="EventsAppear_BeginStoryboard" Storyboard="{StaticResource EventsAppear}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AgeApplyFilter">
-        	<BeginStoryboard x:Name="EventsAppear_BeginStoryboard2" Storyboard="{StaticResource EventsAppear}"/>
+            <BeginStoryboard x:Name="EventsAppear_BeginStoryboard2" Storyboard="{StaticResource EventsAppear}"/>
         </EventTrigger>
     </UserControl.Triggers>
     <Grid x:Name="grid" HorizontalAlignment="Left" VerticalAlignment="Top" Height="680" Width="600" Opacity="0.98">
@@ -165,7 +171,15 @@
         <Rectangle x:Name="FilterBackgroundRectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="680" Stroke="Black" VerticalAlignment="Top" Width="171.5"/>
         <Image Margin="172,0,0,471" Source="Events_Calcrop.jpg" Stretch="Fill"/>
         <TextBlock x:Name="EventsBlock" HorizontalAlignment="Left" Height="138.5" Margin="253,122.673,-38.5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385.5" FontSize="80" FontFamily="Segoe WP Black" TextAlignment="Center" Foreground="#FFC53131" Grid.ColumnSpan="2"><Run Foreground="White" Text="Events"/></TextBlock>
-        <ScrollViewer x:Name="ScrollEvents" HorizontalAlignment="Left" Height="auto" Margin="200,244,0,0" VerticalAlignment="Top" Width="358" Visibility="Hidden">
+        <TextBlock x:Name="UpcomingBlock" HorizontalAlignment="Left" Margin="212,232,0,0" TextWrapping="Wrap" Text="UPCOMING EVENTS" VerticalAlignment="Top" Height="30" Width="330" TextAlignment="Center" FontSize="20" FontFamily="Segoe WP Semibold" Foreground="White" TextDecorations="{x:Null}">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF150303" Offset="0.835"/>
+                    <GradientStop Color="#FFC33F3F"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <ScrollViewer x:Name="ScrollEvents" HorizontalAlignment="Left" Height="auto" Margin="200,274,0,0" VerticalAlignment="Top" Width="358">
             <StackPanel x:Name="EventsHolder" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Top" Width="auto"/>
         </ScrollViewer>
         <Grid x:Name="AreaFilterPopup" HorizontalAlignment="Left" Height="465.116" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="400.5" Background="#FFF4F4F5" Visibility="Hidden">
