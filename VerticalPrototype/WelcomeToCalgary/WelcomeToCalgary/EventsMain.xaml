@@ -149,6 +149,9 @@
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ClearFilters">
         	<BeginStoryboard x:Name="EventsAppear_BeginStoryboard4" Storyboard="{StaticResource EventsAppear}"/>
         </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="FreeEvents">
+        	<BeginStoryboard x:Name="EventsAppear_BeginStoryboard5" Storyboard="{StaticResource EventsAppear}"/>
+        </EventTrigger>
     </UserControl.Triggers>
     <Grid x:Name="grid" HorizontalAlignment="Left" VerticalAlignment="Top" Height="680" Width="600" Opacity="0.98">
         <Grid.Background>
@@ -161,7 +164,15 @@
             <ColumnDefinition Width="149*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Rectangle x:Name="FilterBackgroundRectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="680" Stroke="Black" VerticalAlignment="Top" Width="171.5"/>
+        <Rectangle x:Name="FilterBackgroundRectangle" HorizontalAlignment="Left" Height="680" Stroke="Black" VerticalAlignment="Top" Width="171.5">
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+        			<GradientStop Color="#FF1E1E1F" Offset="0"/>
+        			<GradientStop Color="#FF3C2224" Offset="0.457"/>
+        			<GradientStop Color="#FF333451" Offset="0.965"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
         <Image Margin="172,0,0,471" Source="Events_Calcrop.jpg" Stretch="Fill"/>
         <TextBlock x:Name="EventsBlock" HorizontalAlignment="Left" Height="138.5" Margin="253,122.673,-38.5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385.5" FontSize="80" FontFamily="Segoe WP Black" TextAlignment="Center" Foreground="#FFC53131" Grid.ColumnSpan="2"><Run Foreground="White" Text="Events"/></TextBlock>
         <TextBlock x:Name="UpcomingBlock" HorizontalAlignment="Left" Margin="212,232,0,0" TextWrapping="Wrap" Text="UPCOMING EVENTS" VerticalAlignment="Top" Height="30" Width="330" TextAlignment="Center" FontSize="20" FontFamily="Segoe WP Semibold" Foreground="White" TextDecorations="{x:Null}">
@@ -175,12 +186,28 @@
         <ScrollViewer x:Name="ScrollEvents" HorizontalAlignment="Left" Height="auto" Margin="200,274,0,0" VerticalAlignment="Top" Width="358">
             <StackPanel x:Name="EventsHolder" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Top" Width="auto"/>
         </ScrollViewer>
-        <Grid x:Name="AreaFilterPopup" HorizontalAlignment="Left" Height="465.116" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="400.5" Background="#FFF4F4F5" Visibility="Hidden">
-            <TextBlock x:Name="AreaFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Area..."/></TextBlock>
-            <Button x:Name="AreaApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="292.797,430.5,0,0" VerticalAlignment="Top" Width="79.703" Click="AreaFilterApplied"/>
-            <Button x:Name="AreaFilterCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="358.5,7,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
-            <Image Margin="59.5,40.159,28,53.5" Source="mapCalgary.png" Stretch="Fill"/>
-            <Button x:Name="buttNE_click" HorizontalAlignment="Left" Height="197.833" Margin="253.415,46.5,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="108.085" Click="filterArea_NE_Click" Background="{x:Null}" Opacity="0">
+        <Grid x:Name="AreaFilterPopup" HorizontalAlignment="Left" Height="465" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="400" Visibility="Hidden">
+            <Rectangle HorizontalAlignment="Left" Height="465" RadiusY="25.5" RadiusX="25.5" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="400">
+            	<Rectangle.Fill>
+            		<RadialGradientBrush>
+            			<GradientStop Color="#FF837E7E"/>
+            			<GradientStop Color="#FF404040" Offset="1"/>
+            		</RadialGradientBrush>
+            	</Rectangle.Fill>
+            </Rectangle>
+            <TextBlock x:Name="AreaFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="#FFE8E8E8" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center" FontSize="18.667" FontFamily="Segoe WP Black"><Run Language="en-ca" Text="Filter by Area..."/></TextBlock>
+            <Button x:Name="AreaApplyFilter" Content="Apply Filter" HorizontalAlignment="Center" Height="24.616" Margin="0,430.5,0,0" VerticalAlignment="Top" Width="79.703" Click="AreaFilterApplied" FontSize="14.667"/>
+            <Button x:Name="AreaFilterCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="338.5,10,0,0" VerticalAlignment="Top" Width="33.5" Foreground="White" FontSize="14.667" Block.TextAlignment="Center">
+            	<Button.Background>
+            		<RadialGradientBrush>
+            			<GradientStop Color="#FF9C3E3E"/>
+            			<GradientStop Color="#FF762828" Offset="1"/>
+            		</RadialGradientBrush>
+            	</Button.Background>
+            </Button>
+            <Rectangle HorizontalAlignment="Left" Height="375" Margin="43,38.659,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="316" Fill="Black"/>
+            <Image Margin="44.5,40.159,43,53.5" Source="mapCalgary.png" Stretch="Fill"/>
+            <Button x:Name="buttNE_click" HorizontalAlignment="Left" Height="197.833" Margin="238.415,46.5,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="108.085" Click="filterArea_NE_Click" Background="{x:Null}" Opacity="0">
                 <Button.Resources>
                     <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -204,7 +231,7 @@
                 </Button.Resources>
                 <Path Data="M35.418333,168.83333" Fill="#FFF4F4F5" Height="1" Stretch="Fill" Stroke="Black" Width="1"/>
             </Button>
-            <Button x:Name="buttSE_click" HorizontalAlignment="Left" Height="208.007" Margin="231.368,197.946,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="125.481" Background="#FFB4CFEA" BorderBrush="#FFF5F3F3" Opacity="0" Click="filterArea_SE_click">
+            <Button x:Name="buttSE_click" HorizontalAlignment="Left" Height="208.007" Margin="216.368,197.946,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="125.481" Background="#FFB4CFEA" BorderBrush="#FFF5F3F3" Opacity="0" Click="filterArea_SE_click">
                 <Button.Resources>
                     <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -228,7 +255,7 @@
                 </Button.Resources>
                 <Path Data="M2.632,121.054 C2.6116745,118.91982 3.137098,116.3142 2.132,114.304 2.2153333,114.22067 2.2986667,114.13733 2.382,114.054 2.2117213,113.97832 2.0331661,113.91295 1.882,113.804 1.7863942,113.73509 1.7153333,113.63733 1.632,113.554 1.5486667,113.63733 1.4653333,113.72067 1.382,113.804 0.93865939,113.36066 0.68009933,113.13286 0.132,112.804 0.21533333,112.72067 0.29866667,112.63733 0.382,112.554 -0.16304705,111.46391 0.34078291,110.09791&#xA;0.132,109.054 0.21533333,108.97067 0.29866667,108.88733 0.382,108.804 -0.37271649,105.78513 1.3829733,101.05789 0.632,98.054 0.71533333,97.970667 0.79866667,97.887333 0.882,97.804 -1.2134584,95.708542 2.3817467,86.678367 1.132,83.554 1.4663587,82.216565 1.6567523,80.293138 1.882,78.804" Fill="#FFF4F4F5" Height="43.25" Stretch="Fill" Stroke="Black" Width="3.633"/>
             </Button>
-            <Button x:Name="buttSW_click" Content="SW Selected&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Height="224.564" Margin="67.191,148.75,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="192.642" Click="filterArea_SW_click" IsDefault="True" Opacity="0">
+            <Button x:Name="buttSW_click" Content="SW Selected&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;" HorizontalAlignment="Left" Height="224.564" Margin="52.191,148.75,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="192.642" Click="filterArea_SW_click" IsDefault="True" Opacity="0">
                 <Button.Resources>
                     <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -253,7 +280,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="buttNW_click" Content="Button" HorizontalAlignment="Left" Height="149.37" Margin="66.497,47.63,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="211.862" Click="filterArea_NW_Click" Opacity="0">
+            <Button x:Name="buttNW_click" Content="Button" HorizontalAlignment="Left" Height="149.37" Margin="51.497,47.63,0,0" Style="{DynamicResource ButtonStyle1}" VerticalAlignment="Top" Width="211.862" Click="filterArea_NW_Click" Opacity="0">
                 <Button.Resources>
                     <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -277,35 +304,79 @@
                 </Button.Resources>
             </Button>
         </Grid>
-        <Grid x:Name="CultureFilterPopup" HorizontalAlignment="Left" Height="238" Margin="172,44,0,0" VerticalAlignment="Top" Width="258" Background="#FFF4F4F5" Visibility="Hidden">
-            <TextBlock x:Name="CultureFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Culture..."/></TextBlock>
-            <ListBox x:Name="CultureFilterOptions" HorizontalAlignment="Center" Height="142.5" Margin="0,56,0,0" VerticalAlignment="Top" Width="198">
+        <Grid x:Name="CultureFilterPopup" HorizontalAlignment="Left" Height="250" Margin="172,44,0,0" VerticalAlignment="Top" Width="275" Visibility="Hidden">
+            <Rectangle HorizontalAlignment="Left" Height="250" RadiusY="25.5" RadiusX="25.5" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="275" Margin="0,0,-17,-12">
+        		<Rectangle.Fill>
+        			<RadialGradientBrush>
+        				<GradientStop Color="#FF837E7E"/>
+        				<GradientStop Color="#FF404040" Offset="1"/>
+        			</RadialGradientBrush>
+        		</Rectangle.Fill>
+        	</Rectangle>
+            <TextBlock x:Name="CultureFilterTitle" HorizontalAlignment="Center" Height="46" Margin="50.5,20.5,44.5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Foreground="#FFE8E8E8" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center" FontSize="18.667" FontFamily="Segoe WP Black"><Run Language="en-ca" Text="Filter by Culture..."/></TextBlock>
+            <ListBox x:Name="CultureFilterOptions" HorizontalAlignment="Center" Height="142.5" Margin="0,56,0,0" VerticalAlignment="Top" Width="198" BorderBrush="#FFABADB3" Background="#FFB2B2B2" FontSize="14.667">
                 <ListBoxItem x:Name="CultureSA" Content="South American" IsSelected="True"/>
                 <ListBoxItem x:Name="CultureEU" Content="European" IsSelected="True"/>
                 <ListBoxItem x:Name="CultureAS" Content="Asian" IsSelected="True"/>
                 <ListBoxItem x:Name="CultureAF" Content="African" IsSelected="True"/>
             </ListBox>
-            <Button x:Name="CultureApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="157.402,203.5,0,0" VerticalAlignment="Top" Width="79.703" Click="CultureFilterApplied"/>
-            <Button x:Name="CultureCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="213,5,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
+            <Button x:Name="CultureApplyFilter" Content="Apply Filter" HorizontalAlignment="Center" Height="24.616" Margin="0,212,0,0" VerticalAlignment="Top" Width="79.703" Click="CultureFilterApplied" FontSize="14.667"/>
+            <Button x:Name="CultureCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="213,5,0,0" VerticalAlignment="Top" Width="33.5" Foreground="White" FontSize="14.667" Block.TextAlignment="Center">
+            	<Button.Background>
+            		<RadialGradientBrush>
+            			<GradientStop Color="#FF9C3E3E"/>
+            			<GradientStop Color="#FF762828" Offset="1"/>
+            		</RadialGradientBrush>
+            	</Button.Background>
+            </Button>
         </Grid>
         <Grid x:Name="EventsFilterPanel" HorizontalAlignment="Left" Height="680" VerticalAlignment="Top" Width="171.5">
-            <TextBlock x:Name="FilterTitle" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151.5" FontSize="14.667" TextAlignment="Center" TextDecorations="Underline" Foreground="Black"><Run Language="en-ca" Text="Filter Events"/></TextBlock>
-            <Button x:Name="AreaFilter" Content="By Area" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="0,50,0,0" BorderThickness="0" Background="#FFF4F4F5"/>
-            <Button x:Name="CultureFilter" Content="By Culture" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,100,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
-            <Button x:Name="AgeFilter" Content="By Age" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,150,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
-            <CheckBox x:Name="FreeEvents" Content="Show Only&#xA;Free Events" HorizontalAlignment="Left" Margin="48,200,0,0" VerticalAlignment="Top" Checked="FreeFilterApplied" Unchecked="FreeUnchecked"/>
-            <Button x:Name="ClearFilters" Content="Clear Filter" HorizontalAlignment="Center" Height="27" Margin="0,260,0,0" VerticalAlignment="Top" Width="79.642" Foreground="White" TextBlock.TextAlignment="Center" Background="#FFAE3030" Click="FreeUnchecked"/>
+            <TextBlock x:Name="FilterTitle" HorizontalAlignment="Center" Height="30" Margin="10,28,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151.5" FontSize="20" TextAlignment="Center" TextDecorations="{x:Null}" Foreground="White" FontFamily="Segoe WP Semibold"><TextBlock.Background>
+            		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            			<GradientStop Color="#FF150303" Offset="0.835"/>
+            			<GradientStop Color="#FFC33F3F"/>
+            		</LinearGradientBrush>
+            	</TextBlock.Background><Run Language="en-ca" Text="FILTER EVENTS"/></TextBlock>
+            <Button x:Name="AreaFilter" Content="By Area" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,88.5,48.25,0" BorderThickness="0" Background="{x:Null}" Foreground="#FFE8DADA" FontSize="14.667"/>
+            <Button x:Name="CultureFilter" Content="By Culture" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,176.5,48.25,0" BorderThickness="0" Background="{x:Null}" Foreground="#FFE8DADA" FontSize="14.667"/>
+            <Button x:Name="AgeFilter" Content="By Age" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,282,48.25,0" BorderThickness="0" Background="{x:Null}" Foreground="#FFE8DADA" FontSize="14.667"/>
+            <CheckBox x:Name="FreeEvents" Content="Show Only&#xA;Free Events" HorizontalAlignment="Center" Margin="34.69,378.5,43.608,0" VerticalAlignment="Top" Checked="FreeFilterApplied" Unchecked="FreeUnchecked" Background="White" Foreground="#FFE8DADA" FontSize="14.667"/>
+            <Button x:Name="ClearFilters" Content="Clear Filter" HorizontalAlignment="Center" Height="27" Margin="48.25,513.5,43.608,0" VerticalAlignment="Top" Width="79.642" Foreground="White" TextBlock.TextAlignment="Center" Click="FreeUnchecked" FontSize="14.667">
+            	<Button.Background>
+            		<RadialGradientBrush>
+            			<GradientStop Color="#FF9C3E3E"/>
+            			<GradientStop Color="#FF762828" Offset="1"/>
+            		</RadialGradientBrush>
+            	</Button.Background>
+            </Button>
         </Grid>
-        <Grid x:Name="AgeFilterPopup" HorizontalAlignment="Left" Height="238.115" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="256.5" Background="#FFF4F4F5" Visibility="Hidden">
-            <TextBlock x:Name="AgeFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Age..."/></TextBlock>
-            <ListBox x:Name="AgeFilterOptions" HorizontalAlignment="Center" Height="142.5" Margin="0,56,0,0" VerticalAlignment="Top" Width="198">
+        <Grid x:Name="AgeFilterPopup" HorizontalAlignment="Left" Height="250" Margin="172,44,0,0" VerticalAlignment="Top" Width="275" Visibility="Hidden">
+            <Rectangle HorizontalAlignment="Left" Height="250" Margin="0" RadiusY="25.5" RadiusX="25.5" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="275">
+        		<Rectangle.Fill>
+        			<RadialGradientBrush>
+        				<GradientStop Color="#FF837E7E"/>
+        				<GradientStop Color="#FF404040" Offset="1"/>
+        			</RadialGradientBrush>
+        		</Rectangle.Fill>
+        	</Rectangle>
+
+            <TextBlock x:Name="AgeFilterTitle" HorizontalAlignment="Center" Height="46" Margin="58.75,20.5,52.75,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="#FFE8E8E8" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center" FontFamily="Segoe WP Black" FontSize="18.667"><Run Language="en-ca" Text="Filter by Age..."/></TextBlock>
+            <ListBox x:Name="AgeFilterOptions" HorizontalAlignment="Center" Height="142.5" Margin="29.25,51.5,29.25,0" VerticalAlignment="Top" Width="198" FontSize="14.667" Background="#FFB2B2B2">
                 <ListBoxItem x:Name="AgeKid" Content="Children" IsSelected="True"/>
-                <ListBoxItem x:Name="AgeTeen" Content="Teen and Young Adult" IsSelected="True"/>
+                <ListBoxItem x:Name="AgeTeen" Content="Teen" IsSelected="True"/>
+                <ListBoxItem x:Name="AgeYA" Content="Young Adult"/>
                 <ListBoxItem x:Name="AgeAdult" Content="Adult" IsSelected="True"/>
                 <ListBoxItem x:Name="AgeSenior" Content="Senior" IsSelected="True"/>
             </ListBox>
-            <Button x:Name="AgeApplyFilter" Content="Apply Filter" HorizontalAlignment="Left" Height="24.616" Margin="157.402,203.5,0,0" VerticalAlignment="Top" Width="79.703" Click="AgeFilterApplied"/>
-            <Button x:Name="AgeCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="213,5,0,0" VerticalAlignment="Top" Width="33.5" Background="#FF6A2C2C"/>
+            <Button x:Name="AgeApplyFilter" Content="Apply Filter" HorizontalAlignment="Center" Height="24.616" Margin="0,212,0,0" VerticalAlignment="Top" Width="90" Click="AgeFilterApplied" FontSize="14.667"/>
+            <Button x:Name="AgeCloseButton" Content="X" HorizontalAlignment="Left" Height="25.659" Margin="213,5,0,0" VerticalAlignment="Top" Width="33.5" Foreground="White" FontSize="14.667" Block.TextAlignment="Center">
+            	<Button.Background>
+            		<RadialGradientBrush>
+            			<GradientStop Color="#FF9C3E3E"/>
+            			<GradientStop Color="#FF762828" Offset="1"/>
+            		</RadialGradientBrush>
+            	</Button.Background>
+            </Button>
         </Grid>
 
     </Grid>

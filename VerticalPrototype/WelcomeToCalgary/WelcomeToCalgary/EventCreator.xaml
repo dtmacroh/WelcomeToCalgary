@@ -132,7 +132,7 @@
     				</TransformGroup>
     			</Rectangle.RenderTransform>
     		</Rectangle>
-    		<TextBlock x:Name="printing" HorizontalAlignment="Left" Margin="52.367,62.55,-26,0" TextWrapping="Wrap" Text="Printing selected event..." VerticalAlignment="Top" Width="301" Height="45.57" RenderTransformOrigin="0.5,0.5" FontSize="18.667" FontFamily="Segoe WP Black" Grid.ColumnSpan="2">
+    		<TextBlock x:Name="printing" HorizontalAlignment="Left" Margin="52.367,62.55,-26,0" TextWrapping="Wrap" Text="Printing selected event..." VerticalAlignment="Top" Width="301" Height="45.57" RenderTransformOrigin="0.5,0.5" FontSize="18.667" FontFamily="Segoe WP Black" Grid.ColumnSpan="2" Foreground="#FFE8E8E8">
     			<TextBlock.RenderTransform>
     				<TransformGroup>
     					<ScaleTransform/>
@@ -142,7 +142,7 @@
     				</TransformGroup>
     			</TextBlock.RenderTransform>
     		</TextBlock>
-    		<TextBlock x:Name="donePrint" HorizontalAlignment="Left" Margin="102.5,147.55,0,0" TextWrapping="Wrap" Text="Printing Done!" VerticalAlignment="Top" Width="212.53" Height="38.46" RenderTransformOrigin="0.48,2.848" FontSize="18.667" FontFamily="Segoe WP Black" Grid.ColumnSpan="2">
+    		<TextBlock x:Name="donePrint" HorizontalAlignment="Left" Margin="102.5,147.55,0,0" TextWrapping="Wrap" Text="Printing Done!" VerticalAlignment="Top" Width="212.53" Height="38.46" RenderTransformOrigin="0.48,2.848" FontSize="18.667" FontFamily="Segoe WP Black" Grid.ColumnSpan="2" Foreground="#FFE8E8E8">
     			<TextBlock.RenderTransform>
     				<TransformGroup>
     					<ScaleTransform/>

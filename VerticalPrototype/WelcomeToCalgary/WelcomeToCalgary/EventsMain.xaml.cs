@@ -280,7 +280,7 @@ namespace WelcomeToCalgary
                         this.EventsHolder.Children.Add(Event);
                     }
                 }
-                else if (AgeTeen.IsSelected)
+                else if (AgeYA.IsSelected)
                 {
                     this.UpcomingBlock.Text = "EVENTS FOR YOUNG ADULTS";
 
