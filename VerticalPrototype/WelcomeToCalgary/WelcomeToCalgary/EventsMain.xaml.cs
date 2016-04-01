@@ -28,84 +28,8 @@ namespace WelcomeToCalgary
             InitializeComponent();
             mainScroll = scroll;
 
-            for (int i = 0; i < 6; i++)
-            {
-                EventCreator Event = new EventCreator();
-
-                if (i == 0)
-                {
-                     
-                     Event.Title = "Square Dancing & Lessons";
-                     Event.Date = "Date :  March 1 to April 18, 2016";
-                     Event.Details = "Square dancing every Monday @ 8-10 PM (except Dec. 21 & 28) beginning Sep. 21 at Sunalta Community Hall, 1627-10th Ave. SW. $5 per dancer. " +
-                                     "Three free lessons for new dancers from 7:00 to 8:30 PM Mondays Sep. 21, 28 & Oct. 5; same location. No experience or partner required.";
-                     Event.Location = "Location: Calgary Olympic Plaza \nAddress: 228 8 Ave SE, Calgary, AB T2P 2M5";
-                     Event.Website = "Website: http://www.chatterblock.com/events/198604/square-dancing-lessons/";
-                }
-                else if(i == 1)
-                {
-                    Event.Title = "Wine & Cheese";
-                    Event.Date = "Date : April 2, 2016";
-                    Event.Details = "Enjoy a variety of wines, beers, cheeses and games. Door prizes will be drawn at the end of the evening. We hope to see you there!";
-                    Event.Location = "Location: Banff Trail Community Association  \nAddress: 2115 20 AVE, Calgary, AB";
-                    Event.Website = "Website: http://banfftrailcommunity.ca/";
-                }
-                else if (i == 2)
-                {
-                    Event.Title = "CCAG Spring Art Show and Sale";
-                    Event.Date = "Date :  April 9, 2016";
-                    Event.Details = "The Calgary Creative Arts Guild is hosting our Annual Spring Show & Sale on April 9, 2016 at the Montgomery Community Centre, 5003 16 Ave NW from 10am to 4pm. " +
-                                                "Featuring original works from over 20 local artists, the event will provide refreshments, door prizes and a raffle draw for an original framed watercolour painting." +
-                                                " Admission is free. Donations to the Veteran's Food Bank gratefully accepted.";
-                    Event.Location = "Location: Montgomery Community Centre \nAddress: 5003 16 Ave NW Calgary, AB T3B 0N2";
-                    Event.Website = "Website: http://www.chatterblock.com/events/215795/ccag-spring-art-show-and-sale/";
-                }
-                else if (i == 3)
-                {
-                    Event.Title = "Supertrain";
-                    Event.Date = "Date : April 16 & April 17, 2016";
-                    Event.Details = "Calgary Model Railway Society presents Canada's Biggest and Best annual Model Train Show. Over 70,000 sq ft of operating model railroad layouts, displays, " +
-                                    "hobby shops, model manufacturers, railroad art, photos, clinics and live demos for beginners, ride-on trains, Garden railroads, Lionel, Lego, Thomas, Children's Play Area, and much more. " +
-                                    "Free Parking or take the CTrain to SUPERTRAIN (Saddletowne Station). adult - $10. youth (6-12) - $5. under 6 - free." +
-                                    " Bring a non-perishable food donation for the Calgary Food Bank and receive a dollar off admission";
-                    Event.Location = "Location: Genesis centre  \nAddress: 7555 Falconridge Blvd NE, Calgary, Alberta  T3J 0C9 ";
-                }
-                else if (i == 4)
-                {
-                    Event.Title = "The Fibre Shindig";
-                    Event.Date = "Date : April 16 , 2016";
-                    Event.Details = "All things Fibre! Hand dyed, artisan made - yarn, knitting, embroidery, crochet, felting, spinning, fibre, tools, pottery, ceramics, fine art, jewellery, hand designed and sewn items. " +
-                                     "Come and meet Alberta's best fibre artists and artisans. ";
-                    Event.Location = "Location: Hillhurst Sunnyside Community Centre  \nAddress: 1320 5 Ave. N.W. Calgary , AB";
-                    Event.Website = "Website: https://www.fibreshindig.com/";
-                }
-                else if (i == 5)
-                {
-                    
-                    Event.Title = "Zoogala";
-                    Event.Date = "Date : April 25, 2016";
-                    Event.Details = "The Calgary Zoo's annual fundraising event is a great excuse to party. This adult-only fiesta features a live band and dancing, performances, interactive entertainment, food, wine and " +
-                                           "cocktail sampling, and a unique silent auction. Dress to the theme and win prizes!";
-                    Event.Location = "Location: Calgary Zoo \nAddress: 1300 Zoo Road Calgary  AB  T2M 4R8";
-                    Event.Website = "Website: http://www.calgaryzoo.com/";
-                }
-                else if (i == 6)
-                {
-                    Event.Title = "Crafting / Story time";
-                    Event.Date = "Date : April 27, 2016";
-                    Event.Details = "Amazearts kids art studio hosts a free craft and storytime for kids aged 3-5 years old every Wednesday morning 10-10.45am. " +
-                                    "It’s a fun way to spend a cold winter morning! Space is limited. Register Online";
-                    Event.Location = "Location: Amazearts Studios  \nAddress: #207, 11625 Elbow Drive SW Calgary, AB T2W 1G8";
-                    Event.Website = "Website: http://www.amazearts.com/";
-                }
-                   
-            
-
-                this.EventsHolder.Children.Add(Event);
-            }
-
-
-            
+			createUpcomings();
+         
         }
 
         private void filterArea_NE_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -186,6 +110,7 @@ namespace WelcomeToCalgary
 
             private void CultureFilterApplied(object sender, RoutedEventArgs e)
           {
+			this.FreeEvents.IsChecked=false;
             this.EventsHolder.Children.Clear();
 			this.ScrollEvents.ScrollToTop();
 
@@ -313,6 +238,7 @@ namespace WelcomeToCalgary
 
             private void AgeFilterApplied(object sender, RoutedEventArgs e)
             {
+				this.FreeEvents.IsChecked=false;
                 this.EventsHolder.Children.Clear();
 				this.ScrollEvents.ScrollToTop();
 
@@ -438,6 +364,7 @@ namespace WelcomeToCalgary
             private void AreaFilterApplied(object sender, RoutedEventArgs e)
             {
                 this.EventsHolder.Children.Clear();
+				this.FreeEvents.IsChecked = false;
 				this.ScrollEvents.ScrollToTop();
 
                 if (oneRegSelect == "NE")
@@ -564,7 +491,7 @@ namespace WelcomeToCalgary
 
             private void FreeFilterApplied(object sender, System.Windows.RoutedEventArgs e)
             {
-				 this.EventsHolder.Children.Clear();
+				this.EventsHolder.Children.Clear();
 				this.ScrollEvents.ScrollToTop();
             	for (int i = 0; i < 2; i++)
                     {
@@ -594,10 +521,97 @@ namespace WelcomeToCalgary
                         }
 
                         this.EventsHolder.Children.Add(Event);
-						this.FreeEvents.IsChecked=false;
+					
                     }
 					
             }
+
+            private void FreeUnchecked(object sender, System.Windows.RoutedEventArgs e)
+            {
+				this.EventsHolder.Children.Clear();
+				this.ScrollEvents.ScrollToTop();
+            	createUpcomings();
+            }
+			
+			private void createUpcomings()
+			{
+				 for (int i = 0; i < 6; i++)
+            {
+                EventCreator Event = new EventCreator();
+
+                if (i == 0)
+                {
+                     
+                     Event.Title = "Square Dancing & Lessons";
+                     Event.Date = "Date :  March 1 to April 18, 2016";
+                     Event.Details = "Square dancing every Monday @ 8-10 PM (except Dec. 21 & 28) beginning Sep. 21 at Sunalta Community Hall, 1627-10th Ave. SW. $5 per dancer. " +
+                                     "Three free lessons for new dancers from 7:00 to 8:30 PM Mondays Sep. 21, 28 & Oct. 5; same location. No experience or partner required.";
+                     Event.Location = "Location: Calgary Olympic Plaza \nAddress: 228 8 Ave SE, Calgary, AB T2P 2M5";
+                     Event.Website = "Website: http://www.chatterblock.com/events/198604/square-dancing-lessons/";
+                }
+                else if(i == 1)
+                {
+                    Event.Title = "Wine & Cheese";
+                    Event.Date = "Date : April 2, 2016";
+                    Event.Details = "Enjoy a variety of wines, beers, cheeses and games. Door prizes will be drawn at the end of the evening. We hope to see you there!";
+                    Event.Location = "Location: Banff Trail Community Association  \nAddress: 2115 20 AVE, Calgary, AB";
+                    Event.Website = "Website: http://banfftrailcommunity.ca/";
+                }
+                else if (i == 2)
+                {
+                    Event.Title = "CCAG Spring Art Show and Sale";
+                    Event.Date = "Date :  April 9, 2016";
+                    Event.Details = "The Calgary Creative Arts Guild is hosting our Annual Spring Show & Sale on April 9, 2016 at the Montgomery Community Centre, 5003 16 Ave NW from 10am to 4pm. " +
+                                                "Featuring original works from over 20 local artists, the event will provide refreshments, door prizes and a raffle draw for an original framed watercolour painting." +
+                                                " Admission is free. Donations to the Veteran's Food Bank gratefully accepted.";
+                    Event.Location = "Location: Montgomery Community Centre \nAddress: 5003 16 Ave NW Calgary, AB T3B 0N2";
+                    Event.Website = "Website: http://www.chatterblock.com/events/215795/ccag-spring-art-show-and-sale/";
+                }
+                else if (i == 3)
+                {
+                    Event.Title = "Supertrain";
+                    Event.Date = "Date : April 16 & April 17, 2016";
+                    Event.Details = "Calgary Model Railway Society presents Canada's Biggest and Best annual Model Train Show. Over 70,000 sq ft of operating model railroad layouts, displays, " +
+                                    "hobby shops, model manufacturers, railroad art, photos, clinics and live demos for beginners, ride-on trains, Garden railroads, Lionel, Lego, Thomas, Children's Play Area, and much more. " +
+                                    "Free Parking or take the CTrain to SUPERTRAIN (Saddletowne Station). adult - $10. youth (6-12) - $5. under 6 - free." +
+                                    " Bring a non-perishable food donation for the Calgary Food Bank and receive a dollar off admission";
+                    Event.Location = "Location: Genesis centre  \nAddress: 7555 Falconridge Blvd NE, Calgary, Alberta  T3J 0C9 ";
+                }
+                else if (i == 4)
+                {
+                    Event.Title = "The Fibre Shindig";
+                    Event.Date = "Date : April 16 , 2016";
+                    Event.Details = "All things Fibre! Hand dyed, artisan made - yarn, knitting, embroidery, crochet, felting, spinning, fibre, tools, pottery, ceramics, fine art, jewellery, hand designed and sewn items. " +
+                                     "Come and meet Alberta's best fibre artists and artisans. ";
+                    Event.Location = "Location: Hillhurst Sunnyside Community Centre  \nAddress: 1320 5 Ave. N.W. Calgary , AB";
+                    Event.Website = "Website: https://www.fibreshindig.com/";
+                }
+                else if (i == 5)
+                {
+                    
+                    Event.Title = "Zoogala";
+                    Event.Date = "Date : April 25, 2016";
+                    Event.Details = "The Calgary Zoo's annual fundraising event is a great excuse to party. This adult-only fiesta features a live band and dancing, performances, interactive entertainment, food, wine and " +
+                                           "cocktail sampling, and a unique silent auction. Dress to the theme and win prizes!";
+                    Event.Location = "Location: Calgary Zoo \nAddress: 1300 Zoo Road Calgary  AB  T2M 4R8";
+                    Event.Website = "Website: http://www.calgaryzoo.com/";
+                }
+                else if (i == 6)
+                {
+                    Event.Title = "Crafting / Story time";
+                    Event.Date = "Date : April 27, 2016";
+                    Event.Details = "Amazearts kids art studio hosts a free craft and storytime for kids aged 3-5 years old every Wednesday morning 10-10.45am. " +
+                                    "It’s a fun way to spend a cold winter morning! Space is limited. Register Online";
+                    Event.Location = "Location: Amazearts Studios  \nAddress: #207, 11625 Elbow Drive SW Calgary, AB T2W 1G8";
+                    Event.Website = "Website: http://www.amazearts.com/";
+                }
+                   
+            
+
+                this.EventsHolder.Children.Add(Event);
+            }
+				
+			}
 			
     }
 }
