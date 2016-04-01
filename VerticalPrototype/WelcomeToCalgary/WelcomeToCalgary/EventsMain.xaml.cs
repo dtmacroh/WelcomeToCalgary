@@ -116,6 +116,7 @@ namespace WelcomeToCalgary
 
             if (CultureAS.IsSelected) //Asian
             {
+                this.UpcomingBlock.Text = "Asian Events";
                 for (int i = 0; i < 2; i++)
                 {
                     EventCreator Event = new EventCreator();
@@ -150,6 +151,7 @@ namespace WelcomeToCalgary
             {
                 for (int i = 0; i < 2; i++)
                 {
+                    this.UpcomingBlock.Text = "European Events";
                     EventCreator Event = new EventCreator();
 
                     if (i == 0)
@@ -177,6 +179,8 @@ namespace WelcomeToCalgary
             }
             else if (CultureAF.IsSelected) //Africa
             {
+                this.UpcomingBlock.Text = "African Events";
+
                 for (int i = 0; i < 2; i++)
                 {
                     EventCreator Event = new EventCreator();
@@ -206,6 +210,8 @@ namespace WelcomeToCalgary
             }
             else if (CultureSA.IsSelected) //South America
             {
+                this.UpcomingBlock.Text = "South American Events";
+
                 for (int i = 0; i < 2; i++)
                 {
                     EventCreator Event = new EventCreator();
@@ -244,6 +250,8 @@ namespace WelcomeToCalgary
 
                 if (AgeKid.IsSelected)
                 {
+                    this.UpcomingBlock.Text = "Kids Events";
+
                     for (int i = 0; i < 2; i++)
                     {
                         EventCreator Event = new EventCreator();
@@ -274,6 +282,8 @@ namespace WelcomeToCalgary
                 }
                 else if (AgeTeen.IsSelected)
                 {
+                    this.UpcomingBlock.Text = "Young Adults Events";
+
                     for (int i = 0; i < 2; i++)
                     {
                         EventCreator Event = new EventCreator();
@@ -303,6 +313,8 @@ namespace WelcomeToCalgary
                 }
                 else if (AgeAdult.IsSelected)
                 {
+                    this.UpcomingBlock.Text = "Adult Events";
+
                     for (int i = 0; i < 2; i++)
                     {
                         EventCreator Event = new EventCreator();
@@ -332,8 +344,11 @@ namespace WelcomeToCalgary
                 }
                 else if (AgeSenior.IsSelected)
                 {
+                    this.UpcomingBlock.Text = "Seniors Events";
+
                     for (int i = 0; i < 2; i++)
                     {
+
                         EventCreator Event = new EventCreator();
 
                         if (i == 0)
@@ -369,6 +384,8 @@ namespace WelcomeToCalgary
 
                 if (oneRegSelect == "NE")
                 {
+                    this.UpcomingBlock.Text = "Northeast Events";
+
                     for (int i = 0; i < 2; i++)
                     {
                         EventCreator Event = new EventCreator();
@@ -399,6 +416,8 @@ namespace WelcomeToCalgary
                 }
                 else if (oneRegSelect == "NW")
                 {
+                    this.UpcomingBlock.Text = "Northwest Events";
+
                     for (int i = 0; i < 2; i++)
                     {
                         EventCreator Event = new EventCreator();
@@ -429,6 +448,8 @@ namespace WelcomeToCalgary
                 }
                 else if (oneRegSelect == "SE")
                 {
+                    this.UpcomingBlock.Text = "Southeast Events";
+
                     for (int i = 0; i < 2; i++)
                     {
                         EventCreator Event = new EventCreator();
@@ -459,6 +480,7 @@ namespace WelcomeToCalgary
                 }
                 else if (oneRegSelect == "SW")
                 {
+                    this.UpcomingBlock.Text = "Southwest Events";
 
                     for (int i = 0; i < 2; i++)
                     {
@@ -493,6 +515,8 @@ namespace WelcomeToCalgary
             {
 				this.EventsHolder.Children.Clear();
 				this.ScrollEvents.ScrollToTop();
+                this.UpcomingBlock.Text = "Free Events";
+
             	for (int i = 0; i < 2; i++)
                     {
                         EventCreator Event = new EventCreator();
@@ -531,6 +555,8 @@ namespace WelcomeToCalgary
 				this.EventsHolder.Children.Clear();
 				this.ScrollEvents.ScrollToTop();
             	createUpcomings();
+                this.UpcomingBlock.Text = "Upcoming Events";
+
             }
 			
 			private void createUpcomings()
