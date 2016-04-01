@@ -22,10 +22,6 @@
 				<DiscreteObjectKeyFrame KeyTime="0:0:5.3" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="0:0:5.6" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle1">
-				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-				<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.99"/>
-			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle2">
 				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
 				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
@@ -120,7 +116,13 @@
     			<ColumnDefinition Width="218*"/>
     			<ColumnDefinition Width="117*"/>
     		</Grid.ColumnDefinitions>
-    		<Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="149.92" Margin="10,58.05,0,-10.5" Stroke="Black" VerticalAlignment="Top" Width="317.368" RenderTransformOrigin="0.5,0.5" StrokeThickness="0" Fill="#FFA49F9F" Grid.ColumnSpan="2" RadiusY="25.5" RadiusX="25.5">
+    		<Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="149.92" Margin="10,58.05,0,-10.5" Stroke="Black" VerticalAlignment="Top" Width="317.368" RenderTransformOrigin="0.5,0.5" StrokeThickness="0" Grid.ColumnSpan="2" RadiusY="25.5" RadiusX="25.5">
+    			<Rectangle.Fill>
+    				<RadialGradientBrush>
+    					<GradientStop Color="#FF837E7E"/>
+    					<GradientStop Color="#FF404040" Offset="1"/>
+    				</RadialGradientBrush>
+    			</Rectangle.Fill>
     			<Rectangle.RenderTransform>
     				<TransformGroup>
     					<ScaleTransform/>
@@ -150,17 +152,16 @@
     				</TransformGroup>
     			</TextBlock.RenderTransform>
     		</TextBlock>
-    		<StatusBar x:Name="statusBar" HorizontalAlignment="Left" Height="47.38" Margin="41.5,92.17,0,0" VerticalAlignment="Top" Width="257.5" Background="#FF6A5E5E" Grid.ColumnSpan="2">
+    		<StatusBar x:Name="statusBar" HorizontalAlignment="Left" Height="47.38" Margin="41.5,92.17,0,0" VerticalAlignment="Top" Width="257.5" Background="{x:Null}" Grid.ColumnSpan="2">
     			<StatusBar.Effect>
     				<BlurEffect Radius="1"/>
     			</StatusBar.Effect>
-    			<Rectangle x:Name="rectangle1" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="8.633" RadiusX="8.633"/>
-    			<Rectangle x:Name="rectangle2" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="7.633" RadiusX="7.633"/>
-    			<Rectangle x:Name="rectangle3" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="8.133" RadiusX="8.133"/>
-    			<Rectangle x:Name="rectangle4" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="8.633" RadiusX="8.633"/>
-    			<Rectangle x:Name="rectangle5" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="9.133" RadiusX="9.133"/>
-    			<Rectangle x:Name="rectangle6" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="9.633" RadiusX="9.633"/>
-    			<Rectangle x:Name="rectangle7" Fill="#FF7EEECF" Height="35.38" Stroke="Black" Width="37" RadiusY="10.133" RadiusX="10.133"/>
+    			<Rectangle x:Name="rectangle2" Fill="#FF3BB291" Height="35.38" Stroke="Black" Width="37" RadiusY="7.633" RadiusX="7.633"/>
+    			<Rectangle x:Name="rectangle3" Fill="#FF3BB291" Height="35.38" Stroke="Black" Width="37" RadiusY="8.133" RadiusX="8.133"/>
+    			<Rectangle x:Name="rectangle4" Fill="#FF3BB291" Height="35.38" Stroke="Black" Width="37" RadiusY="8.633" RadiusX="8.633"/>
+    			<Rectangle x:Name="rectangle5" Fill="#FF3BB291" Height="35.38" Stroke="Black" Width="37" RadiusY="9.133" RadiusX="9.133"/>
+    			<Rectangle x:Name="rectangle6" Fill="#FF3BB291" Height="35.38" Stroke="Black" Width="37" RadiusY="9.633" RadiusX="9.633"/>
+    			<Rectangle x:Name="rectangle7" Fill="#FF3BB291" Height="35.38" Stroke="Black" Width="37" RadiusY="10.133" RadiusX="10.133"/>
     		</StatusBar>
     		<Button x:Name="button" Content="OK!" HorizontalAlignment="Left" Margin="129.5,177.51,0,0" VerticalAlignment="Top" Width="75" />
        
