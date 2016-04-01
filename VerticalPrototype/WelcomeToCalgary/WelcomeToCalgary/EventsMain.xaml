@@ -137,12 +137,17 @@
             <BeginStoryboard Storyboard="{StaticResource EventsPageLoad}"/>
             <BeginStoryboard x:Name="EventsAppear_BeginStoryboard3" Storyboard="{StaticResource EventsAppear}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AreaApplyFilter"/>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AreaApplyFilter">
+        	<BeginStoryboard x:Name="EventsAppear_BeginStoryboard1" Storyboard="{StaticResource EventsAppear}"/>
+        </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="CultureApplyFilter">
             <BeginStoryboard x:Name="EventsAppear_BeginStoryboard" Storyboard="{StaticResource EventsAppear}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AgeApplyFilter">
             <BeginStoryboard x:Name="EventsAppear_BeginStoryboard2" Storyboard="{StaticResource EventsAppear}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ClearFilters">
+        	<BeginStoryboard x:Name="EventsAppear_BeginStoryboard4" Storyboard="{StaticResource EventsAppear}"/>
         </EventTrigger>
     </UserControl.Triggers>
     <Grid x:Name="grid" HorizontalAlignment="Left" VerticalAlignment="Top" Height="680" Width="600" Opacity="0.98">
@@ -288,7 +293,8 @@
             <Button x:Name="AreaFilter" Content="By Area" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="0,50,0,0" BorderThickness="0" Background="#FFF4F4F5"/>
             <Button x:Name="CultureFilter" Content="By Culture" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,100,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
             <Button x:Name="AgeFilter" Content="By Age" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="48.25,150,48.25,0" BorderThickness="0" Background="#FFF4F4F5"/>
-            <CheckBox x:Name="FreeEvents" Content="Show Only&#xA;Free Events" HorizontalAlignment="Left" Margin="48,218,0,0" VerticalAlignment="Top" Checked="FreeFilterApplied" Unchecked="FreeUnchecked"/>
+            <CheckBox x:Name="FreeEvents" Content="Show Only&#xA;Free Events" HorizontalAlignment="Left" Margin="48,200,0,0" VerticalAlignment="Top" Checked="FreeFilterApplied" Unchecked="FreeUnchecked"/>
+            <Button x:Name="ClearFilters" Content="Clear Filter" HorizontalAlignment="Center" Height="27" Margin="0,260,0,0" VerticalAlignment="Top" Width="79.642" Foreground="White" TextBlock.TextAlignment="Center" Background="#FFAE3030" Click="FreeUnchecked"/>
         </Grid>
         <Grid x:Name="AgeFilterPopup" HorizontalAlignment="Left" Height="238.115" Margin="171.5,44,0,0" VerticalAlignment="Top" Width="256.5" Background="#FFF4F4F5" Visibility="Hidden">
             <TextBlock x:Name="AgeFilterTitle" HorizontalAlignment="Center" Height="46" Margin="6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163.5" Foreground="Black" RenderTransformOrigin="0.174,-0.033" TextAlignment="Center"><Run Language="en-ca" Text="Filter by Age..."/></TextBlock>
