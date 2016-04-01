@@ -27,8 +27,8 @@ namespace WelcomeToCalgary
         {
             InitializeComponent();
             mainScroll = scroll;
-
 			createUpcomings();
+			AreaApplyFilter.IsEnabled = false;
          
         }
 
@@ -39,6 +39,7 @@ namespace WelcomeToCalgary
 			{
 				buttNE_click.Opacity =0;
 				oneRegSelect = "";
+				AreaApplyFilter.IsEnabled = false;
 			}
 			else
 			{
@@ -46,6 +47,7 @@ namespace WelcomeToCalgary
 				clearAreaButtOpac();
 				buttNE_click.Opacity=80;
 				oneRegSelect= "NE";
+				AreaApplyFilter.IsEnabled = true;
 			}
 			
 			// TODO: Add event handler implementation here.
@@ -57,6 +59,7 @@ namespace WelcomeToCalgary
 			{
 				buttSE_click.Opacity =0;
 				oneRegSelect = "";
+				AreaApplyFilter.IsEnabled = false;
 			}
 			else
 			{
@@ -64,6 +67,7 @@ namespace WelcomeToCalgary
 				clearAreaButtOpac();
 				buttSE_click.Opacity=80;
 				oneRegSelect= "SE";
+				AreaApplyFilter.IsEnabled = true;
 			}
 			
         }
@@ -82,12 +86,14 @@ namespace WelcomeToCalgary
 			{
 				buttSW_click.Opacity =0;
 				oneRegSelect = "";
+				AreaApplyFilter.IsEnabled = false;
 			}
 			else
 			{
 				clearAreaButtOpac();
 				buttSW_click.Opacity=80;
 				oneRegSelect = "SW";
+				AreaApplyFilter.IsEnabled = true;
 			}
 			
 		}
@@ -98,6 +104,7 @@ namespace WelcomeToCalgary
             {
                 buttNW_click.Opacity = 0;
                 oneRegSelect = "";
+				AreaApplyFilter.IsEnabled = false;
             }
             else
             {
@@ -105,6 +112,7 @@ namespace WelcomeToCalgary
                 clearAreaButtOpac();
                 buttNW_click.Opacity = 80;
                 oneRegSelect = "NW";
+				AreaApplyFilter.IsEnabled = true;
             }
         }
 
