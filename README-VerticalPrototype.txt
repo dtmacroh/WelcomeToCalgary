@@ -22,6 +22,15 @@ Features
    Display only free events
 -Prompt the user to print a copy of the event (currently only available through WoZ technology)
 
+Scenario
+An immigrant athlete is jogging through a local park and discovers the kiosk while they takes a break.  
+The user would go through the events selection and browse through the area filter, they would select northeast
+and apply the filter followed by broswing the events. There was nothing that caught their eye so they would browse
+through the culture filter and select a culture they're interested in such as asian events. The events aren't soon so
+the user would select the age filter and search by adult to view the events available for adults. All the events seem
+costly and they're on a budget so the user would then select the free events filter and they would see free marathon events
+which is ideal for their interests and its free as well. 
+
 How to navigate
 From the Home Screen (with updated animations), users have only two applicable buttons open
 to them: Home, and Socializing and Events. By clicking on Socializing and Events, users
