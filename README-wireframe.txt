@@ -1,6 +1,7 @@
 README - Wireframe Prototype
 
 Group name: DD&J
+Group Members: Daniel Armstrong, Debbie Macrohon & Joanna Huynh
 Project name: Welcome to Calgary
 
 This is a prototype relating our project, Welcome to Calgary.
@@ -19,6 +20,12 @@ Features
 2. Calgary Information
 3. Events
 4. Useful Links
+
+Scenario:
+Our scenario would be an immigrant wanting to find more information about Calgary, events taking place or places of interest.
+
+Demo Script:
+An athletic immigrant is curious about the sports in Calgary, he opens up the Calgary kiosk app and is presented with a homepage with four main sections; places of interest, Calgary information, events and useful links. Since he wants to learn about sports in Calgary, he’ll select the Calgary information button. Which will result in a selection of categories; history, sports, culture and top 10 facts. He will select the sports button and information about hockey will be displayed. He is fascinated by this sport and selects the events button on the navigation bar offered at the top of the application to check if there are any hockey events. He decides to search by area and there aren’t any hockey events offered in his area. Hence, he decides to click on the places of interest button on the navigation bar. He selects the sports category and discovers information about the Saddledome and the games held in the building. 
 
 How to navigate
 From the Home Screen, user can select one of 3 different buttons,
