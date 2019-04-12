@@ -38,5 +38,13 @@ namespace WpfApplication1
         {
 
         }
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void button_Copy1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
